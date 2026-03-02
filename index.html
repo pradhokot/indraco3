@@ -68,19 +68,158 @@
             <div class="navbar-bawah w-100 d-none d-lg-flex align-items-lg-center column-gap-lg-5">
                <!-- navigasi desktop -->
                <ul aria-label="navigasi desktop" class="list-unstyled mb-0 d-flex flex-wrap gap-3 text-capitalize flex-lg-grow-1">
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">tentang kami</a></li>
+                  <li>
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">tentang kami</a>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">produk</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover dropdown-link">produk</a>
+                     <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
+                        <div class="container-lg">
+                           <h2 class="fw-bold text-capitalize fs-4">produk kami</h2>
+                           <hr class="opacity-75 border-2">
+                           <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                              <div class="nav flex-column nav-pills" role="tablist">
+                                 <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-product-consumer" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer" aria-selected="true">produk konsumen</button>
+                                 <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-foodservice" data-bs-toggle="pill" data-bs-target="#tab-pane-product-foodservice" aria-selected="false">layanan makanan</button>
+                                 <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment" aria-selected="false">mesin-mesin & peralatan khusus</button>
+                              </div>
+                              <div class="vr"></div>
+                              <div class="tab-content">
+                                 <div class="tab-pane fade show active" id="tab-pane-product-consumer" role="tabpanel" tabindex="0">
+                                    <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                       <div class="nav flex-column nav-pills" role="tablist">
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-product-consumer-supresso" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-supresso" aria-selected="true">supresso</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-balicafe" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-balicafe" aria-selected="false">balicafe</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-ucafe" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-ucafe" aria-selected="false">ucafe</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-rasa-sayang" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-rasa-sayang" aria-selected="false">rasa sayang</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-tugu-buaya" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-tugu-buaya" aria-selected="false">tugu buaya</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-uang-emas" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-uang-emas" aria-selected="false">uang emas</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-brochoco" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-brochoco" aria-selected="false">brochoco</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-jaheku" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-jaheku" aria-selected="false">jaheku</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-intirasa" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-intirasa" aria-selected="false">intirasa</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-consumer-haocafe" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer-haocafe" aria-selected="false">hao cafe</button>
+                                       </div>
+                                       <div class="vr"></div>
+                                       <div class="tab-content">
+                                          <div class="tab-pane fade show active" id="tab-pane-product-consumer-supresso" role="tabpanel" tabindex="0">supresso</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-balicafe" role="tabpanel" tabindex="0">balicafe</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-ucafe" role="tabpanel" tabindex="0">ucafe</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-rasa-sayang" role="tabpanel" tabindex="0">rasa sayang</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-tugu-buaya" role="tabpanel" tabindex="0">tugu buaya</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-uang-emas" role="tabpanel" tabindex="0">uang emas</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-brochoco" role="tabpanel" tabindex="0">brochoco</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-jaheku" role="tabpanel" tabindex="0">jaheku</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-intirasa" role="tabpanel" tabindex="0">intirasa</div>
+                                          <div class="tab-pane fade" id="tab-pane-product-consumer-haocafe" role="tabpanel" tabindex="0">hao cafe</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-pane-product-foodservice" role="tabpanel" tabindex="0">
+                                    <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                       <div class="nav flex-column nav-pills" role="tablist">
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-foodservice1" data-bs-toggle="pill" data-bs-target="#tab-pane-product-foodservice1" aria-selected="false">product-foodservice1</button>
+                                       </div>
+                                       <div class="vr"></div>
+                                       <div class="tab-content">
+                                          <div class="tab-pane fade" id="tab-pane-product-foodservice1" role="tabpanel" tabindex="0">tab panel product-foodservice1</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-pane-product-equipment" role="tabpanel" tabindex="0">
+                                    <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                       <div class="nav flex-column nav-pills" role="tablist">
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment1" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment1" aria-selected="false">product-equipment1</button>
+                                       </div>
+                                       <div class="vr"></div>
+                                       <div class="tab-content">
+                                          <div class="tab-pane fade" id="tab-pane-product-equipment1" role="tabpanel" tabindex="0">tab panel product-equipment1</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- 
+                              <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                 <div class="nav flex-column nav-pills" role="tablist">
+                                    <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product1" data-bs-toggle="pill" data-bs-target="#tab-pane-product1" aria-selected="false">product1</button>
+                                 </div>
+                                 <div class="vr"></div>
+                                 <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab-pane-product1" role="tabpanel" tabindex="0">tab panel product1</div>
+                                 </div>
+                              </div>
+                           -->
+                        </div>
+                     </div>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">bisnis</a></li>
+                  <li>
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">bisnis</a>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">toko resmi</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover dropdown-link">toko resmi</a>
+                     <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
+                        <div class="container-lg">
+                           <h2 class="fw-bold text-capitalize fs-4">toko resmi</h2>
+                           <hr class="opacity-75 border-2">
+                           <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                              <div class="nav flex-column nav-pills" role="tablist">
+                                 <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-ecommerce" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce" aria-selected="true">e-commerce</button>
+                                 <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace" aria-selected="false">marketplace</button>
+                              </div>
+                              <div class="vr"></div>
+                              <div class="tab-content">
+                                 <div class="tab-pane fade show active" id="tab-pane-store-ecommerce" role="tabpanel" tabindex="0">
+                                    <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                       <div class="nav flex-column nav-pills" role="tablist">
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-ecommerce-supresso" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce-supresso" aria-selected="true">supresso</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-ecommerce-indracostore" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce-indracostore" aria-selected="false">indracostore</button>
+                                       </div>
+                                       <div class="vr"></div>
+                                       <div class="tab-content py-2">
+                                          <div class="tab-pane fade show active" id="tab-pane-store-ecommerce-supresso" role="tabpanel" tabindex="0">supresso</div>
+                                          <div class="tab-pane fade" id="tab-pane-store-ecommerce-indracostore" role="tabpanel" tabindex="0">indracostore</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-pane-store-marketplace" role="tabpanel" tabindex="0">
+                                    <div class="d-flex align-items-start column-gap-4 column-gap-xxl-5">
+                                       <div class="nav flex-column nav-pills" role="tablist">
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-marketplace-tokopedia" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tokopedia" aria-selected="true">tokopedia</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-shopee" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-shopee" aria-selected="false">shopee</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-lazada" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-lazada" aria-selected="false">marketplace-lazada</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-blibli" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-blibli" aria-selected="false">blibli</button>
+                                          <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-tiktokshop" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tiktokshop" aria-selected="false">tiktok shop</button>
+                                       </div>
+                                       <div class="vr"></div>
+                                       <div class="tab-content py-2">
+                                          <div class="tab-pane fade show active" id="tab-pane-store-marketplace-tokopedia" role="tabpanel" tabindex="0">tokopedia</div>
+                                          <div class="tab-pane fade" id="tab-pane-store-marketplace-shopee" role="tabpanel" tabindex="0">shopee</div>
+                                          <div class="tab-pane fade" id="tab-pane-store-marketplace-lazada" role="tabpanel" tabindex="0">lazada</div>
+                                          <div class="tab-pane fade" id="tab-pane-store-marketplace-blibli" role="tabpanel" tabindex="0">blibli</div>
+                                          <div class="tab-pane fade" id="tab-pane-store-marketplace-tiktokshop" role="tabpanel" tabindex="0">tiktok shop</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">berita & acara</a></li>
+                  <li>
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">berita & acara</a>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">brosur</a></li>
+                  <li>
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">brosur</a>
+                  </li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">kontak</a></li>
+                  <li>
+                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">kontak</a>
+                  </li>
                </ul>
                <!-- trigger dark/light mode di desktop -->
                <button type="button" class="theme-toggle" aria-label="Ganti tema gelap atau terang">

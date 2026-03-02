@@ -134,3 +134,17 @@ body>main {flex-grow: 1;}
 .collapse-toggler.collapsed::after {
    transform: translate(-100%, -50%) rotate(180deg);
 }
+
+@media (min-width: 992px) {
+   .dropdown:hover>.dropdown-menu,
+   .dropdown:focus>.dropdown-menu {
+      display: block;
+   }
+}
+
+.navbar .dropdown:hover>.dropdown-link,
+.navbar .dropdown:focus>.dropdown-link {
+   font-family: 'HelveticaNeue Bold';
+   font-weight: bold;
+   opacity: 1 !important;
+}
