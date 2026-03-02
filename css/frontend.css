@@ -41,7 +41,6 @@ body>main {flex-grow: 1;}
 .container-xxl {
    --bs-gutter-x: 3rem !important;
 }
-
 @media (min-width: 576px) {
    .container,
    .container-lg,
@@ -56,7 +55,7 @@ body>main {flex-grow: 1;}
 
 .navbar {height: var(--navbar-height);}
 
-.navbar-brand img {max-width: 12rem;}
+.navbar-brand img {max-width: 16rem;}
 @media (min-width: 992px) {
    .navbar-brand img {max-width: 21rem;}
 }
@@ -90,6 +89,48 @@ body>main {flex-grow: 1;}
 }
 
 .text-muted {
-  --bs-text-opacity: .5;
-  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+   --bs-text-opacity: .5;
+   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+.collapse-toggler {
+   color: #000;
+   position: relative;
+   font-family: 'HelveticaNeue Bold';
+   font-weight: bold;
+   opacity: 1 !important;
+}
+
+.collapse-toggler.collapsed {
+   font-family: 'HelveticaNeue';
+   font-weight: normal;
+}
+
+[data-theme="dark"] .collapse-toggler {
+   color: #fff;
+}
+
+.collapse-toggler::after {
+   content: '';
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-color: currentColor;
+
+   -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path d='M297.4 169.4C309.9 156.9 330.2 156.9 342.7 169.4L534.7 361.4C547.2 373.9 547.2 394.2 534.7 406.7C522.2 419.2 501.9 419.2 489.4 406.7L320 237.3L150.6 406.6C138.1 419.1 117.8 419.1 105.3 406.6C92.8 394.1 92.8 373.8 105.3 361.3L297.3 169.3z'/></svg>");
+   -webkit-mask-size: contain;
+   -webkit-mask-repeat: no-repeat;
+
+   mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path d='M297.4 169.4C309.9 156.9 330.2 156.9 342.7 169.4L534.7 361.4C547.2 373.9 547.2 394.2 534.7 406.7C522.2 419.2 501.9 419.2 489.4 406.7L320 237.3L150.6 406.6C138.1 419.1 117.8 419.1 105.3 406.6C92.8 394.1 92.8 373.8 105.3 361.3L297.3 169.3z'/></svg>");
+   mask-size: contain;
+   mask-repeat: no-repeat;
+
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   transform: translate(-100%, -50%) rotate(0deg);
+   transition: transform .3s ease-in-out;
+}
+.collapse-toggler.collapsed::after {
+   transform: translate(-100%, -50%) rotate(180deg);
 }
