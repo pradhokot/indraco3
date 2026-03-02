@@ -11,6 +11,34 @@
    <link rel="stylesheet" href="css/frontend.css">
    <style>
       /* * {outline: solid 1px green;} */
+
+      .hero-banner {
+         aspect-ratio: 3/5;
+      }
+
+      @media (min-width: 648px) {
+         .hero-banner {
+            aspect-ratio: 4/3;
+         }
+      }
+
+      @media (min-width: 992px) {   
+         .hero-banner {
+            aspect-ratio: 21/9;
+         }
+      }
+
+      .videotron {
+         width: auto;
+         height: 135%;
+      }
+
+      @media (min-width: 992px) {
+         .videotron {
+            width: 110%;
+            height: auto;
+         }
+      }
    </style>
 </head>
 <body>
@@ -347,7 +375,26 @@
    </aside>
 
    <main id="konten">
-      <section class="banner text-bg-dark" style="height: 100dvh;"></section>
+      <section aria-labelledby="hero-banner-title">
+         <div class="hero-banner position-relative overflow-hidden bg-secondary">
+            <div class="videotron position-absolute top-50 start-50 translate-middle" style="aspect-ratio: 16/9;">
+               <div class="ratio ratio-16x9 overflow-hidden pointer-event-none">
+                  <iframe class="position-absolute top-50 start-50 translate-middle w-100 h-100" src="https://www.youtube.com/embed/ePqLLciPHKg?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ePqLLciPHKg&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;playsinline=1" loading="eager" aria-hidden="true" tabindex="-1" title="Video profil INDRACO" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+               </div>
+            </div>
+            <div class="z-1 video-overlay position-absolute bg-black opacity-75" style="inset: 0; pointer-events: none;"></div>
+            <div class="banner-caption z-2 position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center p-4">
+               <div class="container">
+                  <div class="text-white" style="max-width: 660px;">
+                     <h1 id="hero-banner-title" class="visually-hidden">Mendekatkan Rasa dengan Kopi Berkualitas Sejak 1971</h1>
+                     <h2 class="display-5 fw-bold">Mendekatkan Rasa, Menghubungkan Kehidupan.</h2>
+                     <p class="lead mb-4">Dari secangkir kopi hingga berbagai produk sehari-hari, INDRACO hadir untuk membuat hidup lebih hangat, praktis, dan bermakna.</p>
+                     <a href="#" class="btn btn-primary rounded-0">Pelajari Lanjut</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <section class="py-5">
          <div class="container py-lg-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus totam, asperiores voluptatem assumenda libero eaque ratione vel iusto maiores. Ex itaque dolor magni cum id, nulla dolorum quisquam accusantium?</p>
