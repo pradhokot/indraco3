@@ -10,7 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
    function onScroll() {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      
+      // Mencegah header sembunyi pada saat submenu produk dan toko resmi dihover (pada resolusi > 992px)
+      const isDesktop = window.innerWidth >= 992;
+      const isDropdownLinkHovered = isDesktop && document.querySelector('.dropdown .dropdown-link:hover, .dropdown .dropdown-menu:hover') !== null;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 80 && !isDropdownLinkHovered) {
          // Scroll ke bawah, sembunyikan header
          header.style.transform = 'translateY(calc(-100% + .25rem))';
       } else {
@@ -76,4 +81,12 @@ elements.forEach((el) => {
    const baris2 = words.slice(middle).join(" ");
 
    el.innerHTML = `${baris1}<br>${baris2}`;
+});
+
+// Hover actions untuk submenu produk dan toko resmi di navigasi desktop
+document.querySelectorAll('.dropdown-menu .nav-pills .nav-link[data-bs-toggle="pill"]').forEach(function(pill) {
+   pill.addEventListener('mouseenter', function() {
+      const tab = new bootstrap.Tab(this);
+      tab.show();
+   });
 });

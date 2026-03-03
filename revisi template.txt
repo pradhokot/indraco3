@@ -1,0 +1,10 @@
+Diaplikasikan pada website eksisting di beta dahulu
+- Logo Indraco indonesia Leading FCMG header & Footer OK ✅
+- video landing page OK ✅
+- light mode & dark mode OK ✅
+- kategori brand OK
+- scroll down artwork halaman tentang kami OK dangan langsung keluar page 1 tulisan scroll down tetap ada
+- tombol sosial media pada footer OK ✅
+- tombol kontak dan store pada header ganti tulisan, karir pindah di footer ✅
+- saat scroll atas header otomatis muncul OK ✅
+- saat scroll bawah header otomatis hilang OK ✅
