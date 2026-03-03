@@ -145,7 +145,15 @@ body>main {flex-grow: 1;}
 
 .navbar .dropdown:hover>.dropdown-link,
 .navbar .dropdown:focus>.dropdown-link {
-   font-family: 'HelveticaNeue Bold';
-   font-weight: bold;
+   /* font-family: 'HelveticaNeue Bold'; */
+   /* font-weight: bold; */
    opacity: 1 !important;
+}
+
+.navbar .nav-pills {white-space: nowrap !important;}
+.navbar .nav-pills .nav-link {min-width: 10rem;}
+
+.vr {
+   background-color: transparent;
+   border-left: solid 1px currentColor;
 }
