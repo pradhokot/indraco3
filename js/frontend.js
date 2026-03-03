@@ -46,6 +46,7 @@ links.forEach(link => {
 
    if (linkPage === currentPage || linkPage === activeLinkOverride) {
       link.classList.add("active");
+      link.setAttribute("aria-current", "page");
    }
 });
 
@@ -90,3 +91,10 @@ document.querySelectorAll('.dropdown-menu .nav-pills .nav-link[data-bs-toggle="p
       tab.show();
    });
 });
+
+// Update tahun copyright
+const currentYear = new Date().getFullYear();
+const copyrightElement = document.getElementById("copyright-year");
+if (copyrightElement) {
+   copyrightElement.textContent = currentYear;
+}
