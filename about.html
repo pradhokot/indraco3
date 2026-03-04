@@ -50,7 +50,7 @@
          60% {transform: translateY(-5px);}
       }
 
-      .scroll-down-btn svg {animation: bounce 2s infinite;}
+      .scroll-down-btn svg, #btn-scroll-down.is-bouncing svg {animation: bounce 2s infinite;}
    </style>
 </head>
 <body>
@@ -61,15 +61,19 @@
 
       <h1 class="visually-hidden">Tentang INDRACO</h1>
 
-      <section class="vh-100 justify-content-center align-items-center d-none d-lg-flex">
-         <a href="#about-title" class="btn scroll-down-btn">
-            SCROLL DOWN
-            <br>
+      <!-- section control -->
+      <div id="section-control" class="position-fixed fixed-bottom end-0 m-4 d-none d-lg-flex flex-column gap-2" style="left: unset !important; bottom: 2rem !important; z-index: 2000;">
+         <button class="btn btn-primary rounded-circle p-0 shadow d-flex align-items-center justify-content-center text-white" id="btn-scroll-up" aria-label="Scroll Up" style="width: 48px; height: 48px; transition: all 0.3s ease;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+               <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+         </button>
+         <button class="btn btn-primary rounded-circle p-0 shadow d-flex align-items-center justify-content-center text-white" id="btn-scroll-down" aria-label="Scroll Down" style="width: 48px; height: 48px; transition: all 0.3s ease;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-         </a>
-      </section>
+         </button>
+      </div>
 
       <section class="section-content" aria-labelledby="about-title">
          <div class="section-header">
@@ -367,10 +371,80 @@
 
          const brushPathData = "M149.3,385.3c80.9-72.6,141.6-121.7,150.3-113.5c16.7,15.7-169,235.8-155.9,247.5 c25.7,22.9,414.8-344.3,430.4-328.3c13.7,14-277.5,307.8-258.5,328.3c22.8,24.6,469.3-364.7,492.5-339.7 c20,21.6-297.9,331.5-274.4,357.8c28.3,31.6,519.3-382.7,549.4-349.5C1109,216.3,777.9,552.3,791,565.4 c14.3,14.2,413.1-378.2,434.8-357.9c24.2,22.7-445.4,536.6-416.6,564.8c32.4,31.7,668.6-576.2,685-559.2 c16.6,17.1-617.2,645.4-595.6,668.3c21.3,22.5,662.5-556.6,680.9-536.9c16.6,17.9-497.3,507.6-471.1,536.9 c24.3,27.2,492.6-366.2,517.3-338.3c21.4,24.3-310.2,347.9-299.2,359.3c11.1,11.4,355.7-310,370.5-295 c11.6,11.8-193.5,218-174.8,239.1c12.1,13.5,113-54.4,255.8-162.2";
 
+         // Section Control Logic
+         const sections = Array.from(document.querySelectorAll('.section-content'));
+         const btnUp = document.getElementById('btn-scroll-up');
+         const btnDown = document.getElementById('btn-scroll-down');
+         
+         if (btnUp && btnDown && sections.length > 0) {
+            let currentIndex = 0;
+
+            function updateCurrentIndex() {
+               let activeIndex = 0;
+               const scrollY = window.scrollY;
+               const offset = window.innerHeight / 2;
+
+               sections.forEach((section, index) => {
+                  if (section.offsetTop <= scrollY + offset) {
+                     activeIndex = index;
+                  }
+               });
+               
+               currentIndex = activeIndex;
+               
+               // Update button states
+               btnUp.style.opacity = currentIndex === 0 ? '0.5' : '1';
+               btnUp.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+               
+               btnDown.style.opacity = currentIndex === sections.length - 1 ? '0.5' : '1';
+               btnDown.style.pointerEvents = currentIndex === sections.length - 1 ? 'none' : 'auto';
+               
+               // Toggle bounce animation only on the first section
+               if (currentIndex === 0) {
+                  btnDown.classList.add('is-bouncing');
+               } else {
+                  btnDown.classList.remove('is-bouncing');
+               }
+            }
+
+            window.addEventListener('scroll', updateCurrentIndex, { passive: true });
+            
+            // Re-run index calculation immediately and after GSAP initializes
+            updateCurrentIndex();
+            setTimeout(updateCurrentIndex, 500);
+
+            // Click Handlers
+            btnUp.addEventListener('click', () => {
+               if (currentIndex > 0) {
+                  let targetScroll = sections[currentIndex - 1].offsetTop;
+                  // If we are scrolling back to any section (except the first one, which has no intro animation block)
+                  if (currentIndex - 1 > 0) {
+                     targetScroll += window.innerHeight * 0.25; // Show partial animation
+                  }
+                  window.scrollTo({
+                     top: targetScroll,
+                     behavior: 'smooth'
+                  });
+               }
+            });
+
+            btnDown.addEventListener('click', () => {
+               if (currentIndex < sections.length - 1) {
+                  let targetScroll = sections[currentIndex + 1].offsetTop;
+                  // Add an offset so it scrolls "into" the animation to ensure the image isn't completely hidden/blank
+                  targetScroll += window.innerHeight * 0.25; 
+                  window.scrollTo({
+                     top: targetScroll,
+                     behavior: 'smooth'
+                  });
+               }
+            });
+         }
+
          ScrollTrigger.matchMedia({
             // Desktop only
             "(min-width: 992px)": function() {
-               const headers = document.querySelectorAll('.section-header .container');
+               const headers = document.querySelectorAll('section:not([aria-labelledby="about-title"]) .section-header .container');
                const cleanupItems = [];
 
                headers.forEach((container, index) => {
