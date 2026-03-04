@@ -41,7 +41,7 @@ document.writeln(`
                   </button>
                </div>
                <ul class="list-unstyled mb-0 d-none d-lg-flex flex-wrap gap-3 ms-auto small">
-                  <li><a href="#" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
+                  <li><a href="https://indracostore.com/" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
                   <li class="vr"></li>
                   <li><a href="#" class="text-reset text-decoration-none">&#x1f1fa;&#x1f1f8; <span class="opacity-75-hover">English</span></a></li>
                   <li class="vr"></li>
@@ -52,11 +52,11 @@ document.writeln(`
                <!-- navigasi desktop -->
                <ul aria-label="navigasi desktop" class="list-unstyled mb-0 d-flex flex-wrap gap-3 text-capitalize flex-lg-grow-1">
                   <li>
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">tentang kami</a>
+                     <a href="about.html" class="text-reset text-decoration-none opacity-75-hover">tentang kami</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover dropdown-link">produk</a>
+                     <a href="product.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link">produk</a>
                      <!-- submenu produk di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
@@ -800,11 +800,11 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">bisnis</a>
+                     <a href="businesses.html" class="text-reset text-decoration-none opacity-75-hover">bisnis</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover dropdown-link">toko resmi</a>
+                     <a href="stores.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link">toko resmi</a>
                      <!-- submenu toko resmi di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
@@ -888,15 +888,19 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">berita & acara</a>
+                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover">berita & acara</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">brosur</a>
+                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover">download</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="#" class="text-reset text-decoration-none opacity-75-hover">kontak</a>
+                     <a href="career.html" class="text-reset text-decoration-none opacity-75-hover">karir</a>
+                  </li>
+                  <li class="vr"></li>
+                  <li>
+                     <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover">kontak</a>
                   </li>
                </ul>
                <div class="d-flex column-gap-4">

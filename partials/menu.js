@@ -10,7 +10,7 @@ document.writeln(`
          <nav aria-label="navigasi mobile">
             <ul class="nav d-block text-capitalize">
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">tentang kami</a>
+                  <a href="about.html" class="nav-link text-reset opacity-75-hover px-0">tentang kami</a>
                </li>
                <li class="nav-item collapse-item">
                   <a data-bs-toggle="collapse" href="#collapse-prduk" class="nav-link collapse-toggler text-reset opacity-75-hover px-0 collapsed">produk</a>
@@ -63,19 +63,22 @@ document.writeln(`
                   </div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">bisnis</a>
+                  <a href="businesses.html" class="nav-link text-reset opacity-75-hover px-0">bisnis</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">toko resmi</a>
+                  <a href="stores.html" class="nav-link text-reset opacity-75-hover px-0">toko resmi</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">berita & acara</a>
+                  <a href="news.html" class="nav-link text-reset opacity-75-hover px-0">berita & acara</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">brosur</a>
+                  <a href="download.html" class="nav-link text-reset opacity-75-hover px-0">brosur</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-reset opacity-75-hover px-0">kontak</a>
+                  <a href="career.html" class="nav-link text-reset opacity-75-hover px-0">karir</a>
+               </li>
+               <li class="nav-item">
+                  <a href="contact.html" class="nav-link text-reset opacity-75-hover px-0">kontak</a>
                </li>
             </ul>
          </nav>

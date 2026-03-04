@@ -40,7 +40,7 @@ body>main {flex-grow: 1;}
 .container-sm,
 .container-xl,
 .container-xxl {
-   --bs-gutter-x: 3rem !important;
+   --bs-gutter-x: 2rem !important;
 }
 @media (min-width: 576px) {
    .container,
