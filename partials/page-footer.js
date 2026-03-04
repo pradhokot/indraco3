@@ -108,7 +108,7 @@ document.writeln(`
          </div>
       </div>
       <hr>
-      <div class="container">
+      <div class="container small">
          <div class="d-flex flex-wrap column-gap-5 justify-content-between">
             <p class="text-muted">Dikembangkan oleh WEBDEV &copy; <span id="copyright-year">2024</span> <b class="fw-bold">INDRACO</b>. Semua hak dilindungi undang-undang.</p>
             <ul class="list-unstyled d-flex flex-wrap gap-2 text-capitalize">

@@ -892,7 +892,7 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover">download</a>
+                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover">unduhan</a>
                   </li>
                   <li class="vr"></li>
                   <li>

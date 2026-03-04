@@ -72,7 +72,7 @@ document.writeln(`
                   <a href="news.html" class="nav-link text-reset opacity-75-hover px-0">berita & acara</a>
                </li>
                <li class="nav-item">
-                  <a href="download.html" class="nav-link text-reset opacity-75-hover px-0">brosur</a>
+                  <a href="download.html" class="nav-link text-reset opacity-75-hover px-0">unduhan</a>
                </li>
                <li class="nav-item">
                   <a href="career.html" class="nav-link text-reset opacity-75-hover px-0">karir</a>
