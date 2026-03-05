@@ -29,9 +29,9 @@ body {
    padding-top: var(--navbar-height);
 }
 
-/* @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
    html, body {font-size: 14px;}
-} */
+}
 
 body>main {flex-grow: 1;}
 @media (min-width: 992px) {
@@ -182,3 +182,5 @@ body>main {flex-grow: 1;}
    color: currentColor !important;
    opacity: .5 !important;
 }
+
+.text-justify {text-align: justify;}
