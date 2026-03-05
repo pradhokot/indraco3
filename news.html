@@ -12,6 +12,15 @@
    <link rel="stylesheet" href="css/frontend.css">
    <style>
       /* * {outline: solid 1px green;} */
+
+      .news-list>li:last-child,
+      .news-list>li:last-of-type {
+         display: none;
+      }
+
+      .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+         background-color: var(--bs-light-bg-subtle) !important;
+      }
    </style>
 </head>
 <body>
@@ -20,8 +29,68 @@
    <script src="partials/menu.js"></script>
    <main id="konten">
 
-      <h1 class="visually-hidden">halaman download</h1>
-      
+      <h1 class="visually-hidden">halaman berita & acara</h1>
+      <div class="py-5">
+         <div class="container py-lg-5">
+            <div class="d-lg-grid" style="grid-template-columns: 1fr auto; gap: 5rem;">
+               
+               <div id="menu-news" class="offcanvas-lg offcanvas-end order-lg-2" tabindex="-1">
+                  <div class="offcanvas-header">
+                     <button class="btn-close rounded-0 border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#menu-news"></button>
+                  </div>
+                  <div class="offcanvas-body d-block">
+                     <h3 class="text-uppercase fs-5 fw-bold">kalender acara</h3>
+                     <hr class="opacity-100 border-2">
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="#" class="text-reset text-decoration-none opacity-75-hover">
+                              <span class="fs-5 text-capitalize">gulfood dubai 2026</span>
+                              <br>
+                              <small>26 &ndash; 30 Januari 2026</small>
+                           </a>
+                        </li>
+                        <li><hr></li>
+                        <li>
+                           <a href="#" class="text-reset text-decoration-none opacity-75-hover">
+                              <span class="fs-5 text-capitalize">gulfood dubai 2026</span>
+                              <br>
+                              <small>26 &ndash; 30 Januari 2026</small>
+                           </a>
+                        </li>
+                        <li><hr></li>
+                        <li>
+                           <a href="#" class="text-reset text-decoration-none opacity-75-hover">
+                              <span class="fs-5 text-capitalize">gulfood dubai 2026</span>
+                              <br>
+                              <small>26 &ndash; 30 Januari 2026</small>
+                           </a>
+                        </li>
+                        <li><hr></li>
+                     </ul>
+                  </div>
+               </div>
+   
+               <div class="order-lg-1">
+                  <h2 class="fs-1 fw-bold text-capitalize mb-0">Gulfood Dubai 2026</h2>
+                  <p class="small mb-4">26 &dash; 30 Januari 2026</p>
+                  <p>
+                     Datang dan sapa kami di Gulfood Dubai, 2026.
+                     <br>
+                     No. Booth: Z5-B21 (Indonesia Pavilion).
+                     <br>
+                     Tanggal: 26-30 Januari 2026.
+                     <br>
+                     Venue: Dubai World Trade Centre (DWTC), Dubai, UAE.
+                     <br>
+                     Bersama kami, telusuri beragam keistimewaan kopi Indonesia. 
+                  </p>
+                  <hr>
+                  <img src="images/news-bg.webp" alt="" loading="lazy" aria-hidden="true" class="w-100 h-auto">
+               </div>
+               
+            </div>
+         </div>
+      </div>
 
    </main>
    <script src="partials/page-footer.js"></script>
