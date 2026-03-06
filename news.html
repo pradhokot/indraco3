@@ -30,12 +30,17 @@
    <main id="konten">
 
       <h1 class="visually-hidden">halaman berita & acara</h1>
-      <div class="py-5">
+      <div class="pb-5">
          <div class="container py-lg-5">
+            <div class="sticky-top bg-body py-3 d-lg-none">
+               <button class="btn btn-lg btn-invert text-uppercase w-100 d-flex align-items-center justify-content-center gap-3" data-bs-toggle="offcanvas" data-bs-target="#menu-news">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-day-fill" viewBox="0 0 16 16"><path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16zm-4.785-6.145a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43c0 .238.192.425.43.425m.336.563h-.672v4.105h.672zm-6.867 4.105v-2.3h2.261v-.61H4.684V7.801h2.464v-.61H4v5.332zm3.296 0h.676V9.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98z"/></svg> kalender acara
+               </button>
+            </div>
             <div class="d-lg-grid" style="grid-template-columns: 1fr auto; gap: 5rem;">
                
                <div id="menu-news" class="offcanvas-lg offcanvas-end order-lg-2" tabindex="-1">
-                  <div class="offcanvas-header">
+                  <div class="offcanvas-header pb-0">
                      <button class="btn-close rounded-0 border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#menu-news"></button>
                   </div>
                   <div class="offcanvas-body d-block">
