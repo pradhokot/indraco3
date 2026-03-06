@@ -56,10 +56,17 @@
          align-items: center;
       }
 
-      .category-header:hover .category-cover,
-      .category-header:focus .category-cover {
-         opacity: 0;
-         visibility: hidden;
+      @media (min-width: 992px) {
+         .category-header:hover .category-cover,
+         .category-header:focus .category-cover {
+            opacity: 0;
+            visibility: hidden;
+         }
+      }
+
+      .category-cover.hide-cover {
+         opacity: 0 !important;
+         visibility: hidden !important;
       }
 
       .category-inner {
@@ -365,5 +372,36 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('.category-header').on('click', function(e) {
+            // Berlaku hanya untuk tampilan mobile (di bawah 992px)
+            if (window.innerWidth < 992) {
+               var $cover = $(this).find('.category-cover');
+               var isHidden = $cover.hasClass('hide-cover');
+               
+               // Jika cover sudah tersembunyi dan user klik link atau tombol carousel
+               if (isHidden && $(e.target).closest('a, button').length > 0) {
+                  return; // biarkan link dan tombol berfungsi
+               }
+               
+               // Reset semua cover untuk tampil kembali
+               $('.category-cover').removeClass('hide-cover');
+               
+               // Jika cover yang diklik belum disembunyikan, sembunyikan
+               if (!isHidden) {
+                  $cover.addClass('hide-cover');
+               }
+            }
+         });
+
+         // Hapus class saat ukuran layar membesar ke ukuran desktop
+         $(window).on('resize', function() {
+            if (window.innerWidth >= 992) {
+               $('.category-cover').removeClass('hide-cover');
+            }
+         });
+      });
+   </script>
 </body>
 </html>
