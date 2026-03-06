@@ -11,7 +11,7 @@ document.writeln(`
                   </button>
                </div>
                <a href="index.html" class="navbar-brand m-0 d-flex">
-                  <img src="images/logo-indraco-FMCG.png" data-light="images/logo-indraco-FMCG.png" data-dark="images/logo-indraco-FMCG-invert.png" alt="Logo INDRACO" class="theme-image w-100 h-auto">
+                  <img src="images/logo-indraco-est.png" data-light="images/logo-indraco-est.png" data-dark="images/logo-indraco-est-invert.png" alt="Logo INDRACO" class="theme-image w-100 h-auto">
                   <span class="visually-hidden">INDRACO</span>
                </a>
                <div class="d-lg-none">

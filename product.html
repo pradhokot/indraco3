@@ -12,6 +12,70 @@
    <link rel="stylesheet" href="css/frontend.css">
    <style>
       /* * {outline: solid 1px green;} */
+
+      #carouselBanner, #carouselBanner .carousel-item {background-color: #1a1a1a;}
+      #carouselBanner .carousel-caption {padding: 0 15% 15% 15%;}
+      #carouselBanner .carousel-img {aspect-ratio: 1/1; object-fit: contain;}
+      @media (min-width: 992px) {
+         #carouselBanner .carousel-caption {padding: 2% 15%;}
+         #carouselBanner .carousel-caption>* {max-width: 26rem;}
+      }
+
+      .category-header {
+         aspect-ratio: 16/9;
+         cursor: pointer;
+         position: relative;
+      }
+
+      .category-cover {
+         width: 100%;
+         height: 100%;
+         background-color: var(--bs-body-bg);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         transition: opacity .3s ease;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         opacity: 1;
+         visibility: visible;
+      }
+
+      .category-icon {
+         aspect-ratio: 1/1;
+         height: 75%;
+         width: auto;
+         position: relative;
+         background-color: var(--bs-primary);
+         border-radius: 50%;
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .category-header:hover .category-cover,
+      .category-header:focus .category-cover {
+         opacity: 0;
+         visibility: hidden;
+      }
+
+      .category-inner {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         overflow: hidden;
+      }
+
+      .category-inner .carousel-item {
+         padding-left: 15%;
+         padding-right: 15%;
+      }
    </style>
 </head>
 <body>
@@ -20,8 +84,279 @@
    <script src="partials/menu.js"></script>
    <main id="konten">
 
-      <h1 class="visually-hidden">halaman download</h1>
+      <h1 class="visually-hidden">halaman produk</h1>
       
+      <section>
+         <div id="carouselBanner" class="carousel carousel-fade slide" data-bs-ride="false" data-bs-pause="false" data-bs-theme="light">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="carousel-caption position-static d-lg-flex align-items-lg-center column-gap-lg-5 justify-content-lg-around">
+                     <img src="images/supresso.png" alt="" loading="lazy" aria-hidden="true" class="carousel-img w-100 h-auto order-lg-2">
+                     <div class="caption-text text-start order-lg-1">
+                        <h2 class="fw-bold fs-1 text-capitalize">Supresso-Crafted Boldly in Indonesia</h2>
+                        <hr>
+                        <p class="fs-4 fw-bold mb-4">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                        <a href="#" class="btn btn-outline-invert text-capitalize active">beli sekarang</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="carousel-caption position-static d-lg-flex align-items-lg-center column-gap-lg-5 justify-content-lg-around">
+                     <img src="images/balicafe.png" alt="" loading="lazy" aria-hidden="true" class="carousel-img w-100 h-auto order-lg-2">
+                     <div class="caption-text text-start order-lg-1">
+                        <h2 class="fw-bold fs-1 text-capitalize">Supresso-Crafted Boldly in Indonesia</h2>
+                        <hr>
+                        <p class="fs-4 fw-bold mb-4">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                        <a href="#" class="btn btn-outline-invert text-capitalize">beli sekarang</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="carousel-caption position-static d-lg-flex align-items-lg-center column-gap-lg-5 justify-content-lg-around">
+                     <img src="images/brochoco.png" alt="" loading="lazy" aria-hidden="true" class="carousel-img w-100 h-auto order-lg-2">
+                     <div class="caption-text text-start order-lg-1">
+                        <h2 class="fw-bold fs-1 text-capitalize">Supresso-Crafted Boldly in Indonesia</h2>
+                        <hr>
+                        <p class="fs-4 fw-bold mb-4">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                        <a href="#" class="btn btn-outline-invert text-capitalize">beli sekarang</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+      </section>
+
+      <section class="py-5 text-center" aria-labelledby="brands">
+         <div class="container py-lg-5">
+            <h2 id="brands" class="fs-3 fw-bold text-capitalize mb-5">produk kami</h2>
+
+            <!-- daftar kategori produk -->
+            <div class="category-list row row-gap-5 row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-lg-4">
+
+               <!-- kategori produk kopi -->
+               <article class="col category-item">
+                  <div class="category-header">
+                     <div class="category-cover z-1">
+                        <div class="category-icon">
+                           <img src="images/coffee.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                        </div>
+                     </div>
+                     <div class="category-inner z-0">
+
+                        <div id="carouselCoffee" class="carousel slide h-100 carousel-invert">
+                           <div class="carousel-inner h-100">
+                              <div class="carousel-item h-100 active">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-supresso.png" data-light="images/logo-supresso.png" data-dark="images/logo-supresso.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-balicafe.png" data-light="images/logo-balicafe.png" data-dark="images/logo-balicafe.png" class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-ucafe.png" data-light="images/logo-ucafe.png" data-dark="images/logo-ucafe-invert.png"class="theme-image w-75 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-rasa-sayang.png" data-light="images/logo-rasa-sayang.png" data-dark="images/logo-rasa-sayang.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-tugu-buaya.png" data-light="images/logo-tugu-buaya.png" data-dark="images/logo-tugu-buaya-invert.png"class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-uang-emas.png" data-light="images/logo-uang-emas.png" data-dark="images/logo-uang-emas-invert.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-haocafe.png" data-light="images/logo-haocafe.png" data-dark="images/logo-haocafe.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoffee" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselCoffee" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                           </button>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="category-body">
+                     <h3 class="text-reset fw-bold text-capitalize">kopi</h3>
+                  </div>
+               </article>
+
+               <!-- kategori produk jahe -->
+               <article class="col category-item">
+                  <div class="category-header">
+                     <div class="category-cover z-1">
+                        <div class="category-icon">
+                           <img src="images/ginger.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                        </div>
+                     </div>
+                     <div class="category-inner z-0">
+
+                        <div id="carouselGinger" class="carousel slide h-100 carousel-invert">
+                           <div class="carousel-inner h-100">
+                              <div class="carousel-item h-100 active">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-jaheku.png" data-light="images/logo-jaheku.png" data-dark="images/logo-jaheku.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselGinger" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselGinger" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                           </button>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="category-body">
+                     <h3 class="text-reset fw-bold text-capitalize">jahe</h3>
+                  </div>
+               </article>
+
+               <!-- kategori produk bubuk kelapa -->
+               <article class="col category-item">
+                  <div class="category-header">
+                     <div class="category-cover z-1">
+                        <div class="category-icon">
+                           <img src="images/coconut.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                        </div>
+                     </div>
+                     <div class="category-inner z-0">
+
+                        <div id="carouselCoconut" class="carousel slide h-100 carousel-invert">
+                           <div class="carousel-inner h-100">
+                              <div class="carousel-item h-100 active">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-intirasa.png" data-light="images/logo-intirasa.png" data-dark="images/logo-intirasa.png" class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoconut" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselCoconut" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                           </button>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="category-body">
+                     <h3 class="text-reset fw-bold text-capitalize">bubuk kelapa</h3>
+                  </div>
+               </article>
+
+               <!-- kategori produk cokalat -->
+               <article class="col category-item">
+                  <div class="category-header">
+                     <div class="category-cover z-1">
+                        <div class="category-icon">
+                           <img src="images/cocoa.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                        </div>
+                     </div>
+                     <div class="category-inner z-0">
+
+                        <div id="carouselCocoa" class="carousel slide h-100 carousel-invert">
+                           <div class="carousel-inner h-100">
+                              <div class="carousel-item h-100 active">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-supresso-choco.png" data-light="images/logo-supresso-choco.png" data-dark="images/logo-supresso-choco.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                              <div class="carousel-item h-100">
+                                 <a href="#" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                    <img src="images/logo-brochoco.png" data-light="images/logo-brochoco.png" data-dark="images/logo-brochoco.png" class="theme-image w-75 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                 </a>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselCocoa" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselCocoa" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                           </button>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="category-body">
+                     <h3 class="text-reset fw-bold text-capitalize">cokelat</h3>
+                  </div>
+               </article>
+
+            </div>
+
+         </div>
+      </section>
+
+      <section class="py-5 text-bg-primary text-center" aria-labelledby="marketplace">
+         <div class="container py-lg-5">
+            <h2 id="marketplace" class="fs-3 fw-bold text-capitalize mb-5">pesan produk kami</h2>
+            <div class="mb-5">
+               <p class="small">Website INDRACOSTORE</p>
+               <a href="#" class="text-reset text-decoration-none">
+                  <img src="images/logo-indracostore-invert.png" alt="Logo INDRACO Store" loading="lazy" class="w-100 h-auto" style="max-width: 18rem;">
+               </a>
+            </div>
+            <div>
+               <p class="small">tersedia juga di :</p>
+               <nav aria-label="online store" class="d-flex flex-wrap justify-content-center align-items-center" style="gap: 3rem 5rem;">
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="images/logo-tokopedia.png" alt="Logo Tokopedia" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="images/logo-shopee.png" alt="Logo Shopee" loading="lazy" class="w-100 h-auto" style="max-width: 3rem;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="images/logo-blibli.png" alt="Logo Blibli" loading="lazy" class="w-100 h-auto" style="max-width: 8rem;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="images/logo-lazada.png" alt="Logo Lazada" loading="lazy" class="w-100 h-auto" style="max-width: 4rem;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="images/logo-tiktokshop.png" alt="Logo TikTok Shop" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </section>
 
    </main>
    <script src="partials/page-footer.js"></script>
