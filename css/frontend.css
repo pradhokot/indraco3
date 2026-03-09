@@ -195,3 +195,9 @@ body>main {flex-grow: 1;}
    color: currentColor;
    font-size: 1em;
 }
+
+@media (min-width: 992px) {
+   .position-lg-absolute {
+      position: absolute !important;
+   }
+}

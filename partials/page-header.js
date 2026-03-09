@@ -94,17 +94,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-supresso1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-supresso2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-supresso3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -117,17 +117,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-balicafe1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-balicafe2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-balicafe3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -140,17 +140,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-ucafe1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-ucafe2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-ucafe3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -163,17 +163,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-rasa-sayang1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-rasa-sayang2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-rasa-sayang3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -186,17 +186,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-tugu-buaya1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-tugu-buaya2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-tugu-buaya3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -209,17 +209,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-uang-emas1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-uang-emas2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-uang-emas3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -232,17 +232,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-brochoco1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-brochoco2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-brochoco3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -255,17 +255,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-jaheku1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-jaheku2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-jaheku3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -278,17 +278,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-intirasa1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-intirasa2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-intirasa3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
@@ -301,17 +301,17 @@ document.writeln(`
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-haocafe1.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-haocafe2.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
-                                                         <img src="" alt="" loading="lazy" class="object-fit-cover">
+                                                         <img src="images/submenu-haocafe3.jpg" alt="" loading="lazy" class="object-fit-cover">
                                                       </div>
                                                    </figure>
                                                 </div>
