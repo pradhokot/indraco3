@@ -86,9 +86,42 @@ elements.forEach((el) => {
 
 // Hover actions untuk submenu produk dan toko resmi di navigasi desktop
 document.querySelectorAll('.dropdown-menu .nav-pills .nav-link[data-bs-toggle="pill"]').forEach(function(pill) {
+   
+   // Konversi nilai onclick yang berupa nama halaman (misal: onclick="product.html") 
+   // ke attribute data-target-url agar tidak menjadi error Uncaught ReferenceError saat tab diklik.
+   if (pill.hasAttribute('onclick')) {
+      const onclickAttr = pill.getAttribute('onclick');
+      if (!onclickAttr.includes('=') && !onclickAttr.includes('(')) {
+         pill.setAttribute('data-target-url', onclickAttr.trim());
+         pill.removeAttribute('onclick');
+      }
+   }
+
    pill.addEventListener('mouseenter', function() {
       const tab = new bootstrap.Tab(this);
       tab.show();
+   });
+   
+   pill.addEventListener('click', function(e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      const targetUrl = this.getAttribute('data-target-url');
+      const target = this.getAttribute('target'); // Cek target blank
+      
+      let finalUrl = null;
+      if (href && href !== '#' && !href.startsWith('javascript:')) {
+         finalUrl = href;
+      } else if (targetUrl) {
+         finalUrl = targetUrl;
+      }
+
+      if (finalUrl) {
+         if (target === "_blank") {
+            window.open(finalUrl, '_blank');
+         } else {
+            window.location.href = finalUrl;
+         }
+      }
    });
 });
 

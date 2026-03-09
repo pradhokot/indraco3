@@ -22,8 +22,9 @@
          transform: translate(-50%, -50%) scale(1);
          transition: transform .3s ease;
       }
-      .menu-variant-item .figure-img:hover img,
-      .menu-variant-item .figure-img:focus img {
+      .menu-variant-item>a:hover img,
+      .menu-variant-item>a:focus img,
+      .menu-variant-item>a.active img {
          transform: translate(-50%, -65%) scale(1.5);
       }
 
@@ -93,10 +94,10 @@
          <div class="category-item tab-pane fade show active" id="brand-category-single-origin">
             <h2 class="visually-hidden">category single origin</h2>
 
-            <header class="header-tab-pane sticky-top overflow-auto bg-light-subtle">
+            <header id="nav-variant-single-origin" class="header-tab-pane sticky-top overflow-auto bg-light-subtle">
                <ol class="menu-variant list-unstyled d-flex gap-4 p-4 mb-0 justify-content-lg-center column-gap-xxl-5">
                   <li class="menu-variant-item">
-                     <a href="#brand-category-single-origin" class="text-reset text-decoration-none">
+                     <a href="#variant-aceh-gayo" class="text-reset text-decoration-none">
                         <figure class="figure mb-0">
                            <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #0c86ad;">
                               <img src="images/supresso-can-aceh-gayo.png" alt="" loading="lazy" aria-hidden="true" class="object-fit-contain">
@@ -188,7 +189,7 @@
                </ol>
             </header>
 
-            <ul class="variant-list list-unstyled pb-5">
+            <ul data-bs-spy="scroll" data-bs-target="#nav-variant-single-origin" class="variant-list list-unstyled pb-5">
 
                <li class="variant-item" id="variant-aceh-gayo">
                   <header class="variant-header overflow-hidden text-white position-relative" style="background-color: #0c86ad;">

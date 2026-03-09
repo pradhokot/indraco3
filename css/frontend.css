@@ -35,6 +35,12 @@ body>main {flex-grow: 1;}
    body>footer address {max-width: 14.5em;}
 }
 
+body>header {z-index: 3;}
+body>main,
+body>footer {
+   z-index: 0;
+}
+
 .container,
 .container-fluid,
 .container-lg,
