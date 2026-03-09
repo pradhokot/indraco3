@@ -481,7 +481,7 @@ document.writeln(`
                                           <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-product-equipment-coffee-machine" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment-coffee-machine" aria-selected="true">mesin kopi</button>
                                           <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment-dispenser" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment-dispenser" aria-selected="false">dispenser minuman</button>
                                           <button type="button" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment-accessories" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment-accessories" aria-selected="false">aksesoris</button>
-                                          <a href="#" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment-guarante">garansi</a>
+                                          <a href="https://supresso.com/id/kraton" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment-guarante">garansi</a>
                                        </div>
                                        <div class="vr"></div>
                                        <div class="tab-content">

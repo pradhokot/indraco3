@@ -21,43 +21,43 @@ document.writeln(`
                            <div class="collapse" id="collapse-produk-konsummen">
                               <ul class="nav d-block text-capitalize ps-4">
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">supresso</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">supresso</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">BaliCafé</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">BaliCafé</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">UCAFÉ</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">UCAFÉ</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">rasa sayang</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">rasa sayang</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">tugu buaya</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">tugu buaya</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">uang emas</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">uang emas</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">BROCHOCO</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">BROCHOCO</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">jeheku</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">jeheku</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">intiRasa</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">intiRasa</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a href="#" class="nav-link text-reset opacity-75-hover px-0">Hao Cafe</a>
+                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">Hao Cafe</a>
                                  </li>
                               </ul>
                            </div>
                         </li>
                         <li class="nav-item">
-                           <a href="#" class="nav-link text-reset opacity-75-hover px-0">food service</a>
+                           <a href="foodservice.html" class="nav-link text-reset opacity-75-hover px-0">food service</a>
                         </li>
                         <li class="nav-item">
-                           <a href="#" class="nav-link text-reset opacity-75-hover px-0">mesin-mesin & peralatan khusus</a>
+                           <a href="equipment.html" class="nav-link text-reset opacity-75-hover px-0">mesin-mesin & peralatan khusus</a>
                         </li>
                      </ul>
                   </div>
@@ -87,7 +87,7 @@ document.writeln(`
       <div class="p-3">
          <ul class="nav flex-column text-capitalize">
             <li class="nav-item">
-               <a href="#" class="nav-link text-reset opacity-75-hover px-0">INDRACOSTORE</a>
+               <a href="https://indracostore.com/" target="_blank" class="nav-link text-reset opacity-75-hover px-0">INDRACOSTORE</a>
             </li>
             <li class="nav-item">
                <a href="#" class="nav-link text-reset opacity-75-hover px-0">&#x1f1fa;&#x1f1f8; English</a>
