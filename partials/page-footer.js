@@ -1,5 +1,5 @@
 document.writeln(`
-   <footer class="bg-light-subtle small py-3 border-top">
+   <footer class="bg-light-subtle small py-3">
       <div class="container py-5">
          <div class="row row-gap-5 gx-md-5 justify-content-lg-between">
             <div class="col col-12 col-lg-auto order-lg-1 d-lg-flex flex-lg-column">

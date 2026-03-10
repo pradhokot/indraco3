@@ -1,7 +1,7 @@
 document.writeln(`
    <header class="fixed-top">
       <!-- navigasi utama -->
-      <nav aria-label="navigasi utama" class="navbar bg-light-subtle border-bottom">
+      <nav aria-label="navigasi utama" class="navbar bg-light-subtle">
          <div class="container-xxl flex-column row-gap-lg-3">
             <div class="navbar-atas w-100 d-grid d-lg-flex align-items-center column-gap-4 column-gap-lg-5" style="grid-template-columns: 1fr auto 1fr;">
                <!-- toggler navigasi mobile -->
