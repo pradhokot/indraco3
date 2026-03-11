@@ -98,7 +98,7 @@ document.querySelectorAll('.dropdown-menu .nav-pills .nav-link[data-bs-toggle="p
    // ke attribute data-target-url agar tidak menjadi error Uncaught ReferenceError saat tab diklik.
    if (pill.hasAttribute('onclick')) {
       const onclickAttr = pill.getAttribute('onclick');
-      if (!onclickAttr.includes('=') && !onclickAttr.includes('(')) {
+      if (!onclickAttr.includes('(') && !onclickAttr.includes('window.') && !onclickAttr.includes('location.')) {
          pill.setAttribute('data-target-url', onclickAttr.trim());
          pill.removeAttribute('onclick');
       }
