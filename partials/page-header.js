@@ -43,30 +43,32 @@ document.writeln(`
                <ul class="list-unstyled mb-0 d-none d-lg-flex flex-wrap gap-3 ms-auto small">
                   <li><a href="https://indracostore.com/" target="_blank" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none">&#x1f1fa;&#x1f1f8; <span class="opacity-75-hover">English</span></a></li>
+                  <!-- toggler bahasa inggris -->
+                  <li><a href="#" class="text-reset text-decoration-none lang-toggler" data-lang="en">&#x1f1fa;&#x1f1f8; <span class="opacity-75-hover">English</span></a></li>
                   <li class="vr"></li>
-                  <li><a href="#" class="text-reset text-decoration-none">&#x1F1EE;&#x1F1E9; <span class="opacity-75-hover active">Indonesia</span></a></li>
+                  <!-- toggler bahasa indonesia -->
+                  <li><a href="#" class="text-reset text-decoration-none lang-toggler" data-lang="id">&#x1F1EE;&#x1F1E9; <span class="opacity-75-hover active">Indonesia</span></a></li>
                </ul>
             </div>
             <div class="navbar-bawah w-100 d-none d-lg-flex align-items-lg-center column-gap-lg-5">
                <!-- navigasi desktop -->
                <ul aria-label="navigasi desktop" class="list-unstyled mb-0 d-flex flex-wrap gap-3 text-capitalize flex-lg-grow-1">
                   <li>
-                     <a href="about.html" class="text-reset text-decoration-none opacity-75-hover">tentang kami</a>
+                     <a href="about.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_about">tentang kami</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="product.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link">produk</a>
+                     <a href="product.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link" data-i18n="nav_product">produk</a>
                      <!-- submenu produk di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
-                           <h2 class="fw-bold text-capitalize fs-4">produk kami</h2>
+                           <h2 class="fw-bold text-capitalize fs-4" data-i18n="nav_product">produk kami</h2>
                            <hr class="opacity-75 border-2">
                            <div class="d-flex column-gap-4">
                               <div class="nav flex-column nav-pills" role="tablist">
-                                 <button type="button" onclick="product.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-product-consumer" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer" aria-selected="true">produk konsumen</button>
-                                 <button type="button" onclick="foodservice.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-foodservice" data-bs-toggle="pill" data-bs-target="#tab-pane-product-foodservice" aria-selected="false">layanan makanan</button>
-                                 <button type="button" onclick="equipment.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment" aria-selected="false">mesin-mesin & peralatan khusus</button>
+                                 <button type="button" onclick="product.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-product-consumer" data-bs-toggle="pill" data-bs-target="#tab-pane-product-consumer" aria-selected="true" data-i18n="nav_product_consumer">produk konsumen</button>
+                                 <button type="button" onclick="foodservice.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-foodservice" data-bs-toggle="pill" data-bs-target="#tab-pane-product-foodservice" aria-selected="false" data-i18n="nav_foodservice">layanan makanan</button>
+                                 <button type="button" onclick="equipment.html" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-product-equipment" data-bs-toggle="pill" data-bs-target="#tab-pane-product-equipment" aria-selected="false" data-i18n="nav_equipment">mesin-mesin & peralatan khusus</button>
                               </div>
                               <div class="vr"></div>
                               <div class="tab-content">
@@ -800,15 +802,15 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="businesses.html" class="text-reset text-decoration-none opacity-75-hover">bisnis</a>
+                     <a href="businesses.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_business">bisnis</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="stores.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link">toko resmi</a>
+                     <a href="stores.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link" data-i18n="nav_stores">toko resmi</a>
                      <!-- submenu toko resmi di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
-                           <h2 class="fw-bold text-capitalize fs-4">toko resmi</h2>
+                           <h2 class="fw-bold text-capitalize fs-4" data-i18n="nav_stores">toko resmi</h2>
                            <hr class="opacity-75 border-2">
                            <div class="d-flex column-gap-4">
                               <div class="nav flex-column nav-pills" role="tablist">
@@ -878,19 +880,19 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover">berita & acara</a>
+                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_news">berita & acara</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover">unduhan</a>
+                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_download">unduhan</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="career.html" class="text-reset text-decoration-none opacity-75-hover">karir</a>
+                     <a href="career.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_career">karir</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover">kontak</a>
+                     <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_contact">kontak</a>
                   </li>
                </ul>
                <div class="d-flex column-gap-4">

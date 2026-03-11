@@ -10,14 +10,14 @@ document.writeln(`
          <nav aria-label="navigasi mobile">
             <ul class="nav d-block text-capitalize">
                <li class="nav-item">
-                  <a href="about.html" class="nav-link text-reset opacity-75-hover px-0">tentang kami</a>
+                  <a href="about.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_about">tentang kami</a>
                </li>
                <li class="nav-item collapse-item">
-                  <a data-bs-toggle="collapse" href="#collapse-prduk" class="nav-link collapse-toggler text-reset opacity-75-hover px-0 collapsed">produk</a>
+                  <a data-bs-toggle="collapse" href="#collapse-prduk" class="nav-link collapse-toggler text-reset opacity-75-hover px-0 collapsed" data-i18n="nav_product">produk</a>
                   <div class="collapse" id="collapse-prduk">
                      <ul class="nav d-block text-capitalize ps-4">
                         <li class="nav-item collapse-item">
-                           <a data-bs-toggle="collapse" href="#collapse-produk-konsummen" class="nav-link collapse-toggler text-reset opacity-75-hover px-0 collapsed">produk konsumen</a>
+                           <a data-bs-toggle="collapse" href="#collapse-produk-konsummen" class="nav-link collapse-toggler text-reset opacity-75-hover px-0 collapsed" data-i18n="nav_product_consumer">produk konsumen</a>
                            <div class="collapse" id="collapse-produk-konsummen">
                               <ul class="nav d-block text-capitalize ps-4">
                                  <li class="nav-item">
@@ -54,31 +54,31 @@ document.writeln(`
                            </div>
                         </li>
                         <li class="nav-item">
-                           <a href="foodservice.html" class="nav-link text-reset opacity-75-hover px-0">food service</a>
+                           <a href="foodservice.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_foodservice">food service</a>
                         </li>
                         <li class="nav-item">
-                           <a href="equipment.html" class="nav-link text-reset opacity-75-hover px-0">mesin-mesin & peralatan khusus</a>
+                           <a href="equipment.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_equipment">mesin-mesin & peralatan khusus</a>
                         </li>
                      </ul>
                   </div>
                </li>
                <li class="nav-item">
-                  <a href="businesses.html" class="nav-link text-reset opacity-75-hover px-0">bisnis</a>
+                  <a href="businesses.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_business">bisnis</a>
                </li>
                <li class="nav-item">
-                  <a href="stores.html" class="nav-link text-reset opacity-75-hover px-0">toko resmi</a>
+                  <a href="stores.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_stores">toko resmi</a>
                </li>
                <li class="nav-item">
-                  <a href="news.html" class="nav-link text-reset opacity-75-hover px-0">berita & acara</a>
+                  <a href="news.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_news">berita & acara</a>
                </li>
                <li class="nav-item">
-                  <a href="download.html" class="nav-link text-reset opacity-75-hover px-0">unduhan</a>
+                  <a href="download.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_download">unduhan</a>
                </li>
                <li class="nav-item">
-                  <a href="career.html" class="nav-link text-reset opacity-75-hover px-0">karir</a>
+                  <a href="career.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_career">karir</a>
                </li>
                <li class="nav-item">
-                  <a href="contact.html" class="nav-link text-reset opacity-75-hover px-0">kontak</a>
+                  <a href="contact.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_contact">kontak</a>
                </li>
             </ul>
          </nav>
@@ -90,10 +90,12 @@ document.writeln(`
                <a href="https://indracostore.com/" target="_blank" class="nav-link text-reset opacity-75-hover px-0">INDRACOSTORE</a>
             </li>
             <li class="nav-item">
-               <a href="#" class="nav-link text-reset opacity-75-hover px-0">&#x1f1fa;&#x1f1f8; English</a>
+               <!-- toggler bahasa inggris -->
+               <a href="#" class="nav-link text-reset opacity-75-hover px-0 lang-toggler" data-lang="en">&#x1f1fa;&#x1f1f8; English</a>
             </li>
             <li class="nav-item">
-               <a href="#" class="nav-link text-reset opacity-75-hover px-0 active">&#x1F1EE;&#x1F1E9; Indonesia</a>
+               <!-- toggler bahasa indonesia -->
+               <a href="#" class="nav-link text-reset opacity-75-hover px-0 active lang-toggler" data-lang="id">&#x1F1EE;&#x1F1E9; Indonesia</a>
             </li>
          </ul>
       </div>

@@ -138,3 +138,85 @@ const copyrightElement = document.getElementById("copyright-year");
 if (copyrightElement) {
    copyrightElement.textContent = currentYear;
 }
+
+// Fungsi alih bahasa
+document.addEventListener('DOMContentLoaded', function() {
+   const langTogglers = document.querySelectorAll('.lang-toggler');
+   if (!langTogglers.length) return;
+
+   // Cek bahasa yang aktif dari localStorage. Jika tidak ada, defaultnya 'id'
+   let activeLang = localStorage.getItem('site_lang') || 'id';
+
+   // Fungsi untuk meng-update tampilan (class .active) sesuai bahasa yang dipilih
+   function updateLangUI() {
+      langTogglers.forEach(toggler => {
+         const lang = toggler.getAttribute('data-lang');
+         
+         // Untuk navigasi mobile (menu.js), target .active langsung di tag <a>
+         if (toggler.classList.contains('nav-link')) {
+            if (lang === activeLang) {
+               toggler.classList.add('active');
+            } else {
+               toggler.classList.remove('active');
+            }
+         } 
+         // Untuk navigasi desktop (page-header.js), target .active ada di tag <span> di dalam <a>
+         else {
+            const span = toggler.querySelector('span');
+            if (span) {
+               if (lang === activeLang) {
+                  span.classList.add('active');
+               } else {
+                  span.classList.remove('active');
+               }
+            }
+         }
+      });
+   }
+   
+   // Terapkan status active saat halaman dimuat
+   updateLangUI();
+
+   // Event listener saat tombol bahasa di-klik
+   langTogglers.forEach(toggler => {
+      toggler.addEventListener('click', function(e) {
+         e.preventDefault();
+         const selectedLang = this.getAttribute('data-lang');
+         
+         if (selectedLang !== activeLang) {
+            activeLang = selectedLang;
+            
+            // Simpan bahasa yang dipilih ke localStorage
+            localStorage.setItem('site_lang', activeLang);
+            
+            // Perbarui tampilan interface
+            updateLangUI();
+            
+            // Perbarui text bahasa di HTML 
+            if(typeof updateKamusUI === 'function') {
+               updateKamusUI();
+            }
+         }
+      });
+   });
+   
+   // Fungsi untuk mengganti text HTML bersasarkan terjemahan
+   window.updateKamusUI = function() {
+      if (typeof translations === 'undefined') return; // Cegah error jika file kamus belum dimuat
+      
+      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+      
+      elementsToTranslate.forEach(element => {
+         const key = element.getAttribute('data-i18n');
+         
+         if (translations[activeLang] && translations[activeLang][key]) {
+            element.textContent = translations[activeLang][key];
+         }
+      });
+   }
+
+   // Panggil satu kali saat Website pertamakali dibuka
+   if(typeof updateKamusUI === 'function') {
+      updateKamusUI();
+   }
+});
