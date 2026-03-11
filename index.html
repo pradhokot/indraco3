@@ -56,7 +56,7 @@
                      <h1 id="hero-banner-title" class="visually-hidden">Mendekatkan Rasa dengan Kopi Berkualitas Sejak 1971</h1>
                      <h2 class="display-5 fw-bold">Mendekatkan Rasa, Menghubungkan Kehidupan.</h2>
                      <p class="lead mb-4">Dari secangkir kopi hingga berbagai produk sehari-hari, INDRACO hadir untuk membuat hidup lebih hangat, praktis, dan bermakna.</p>
-                     <a href="#" class="btn btn-outline-invert">Pelajari Lanjut</a>
+                     <a href="about.html" class="btn btn-outline-invert">Pelajari Lanjut</a>
                   </div>
                </div>
             </div>
@@ -80,8 +80,8 @@
                         <div class="flex-grow-1">
                            <h3 class="fw-thin text-capitalize" style="font-size: 2.25rem;">our <br> <span class="fw-normal">newsletter</span></h3>
                         </div>
-                        <form action="">
-                           <div class="input-group border-bottom">
+                        <form action="" data-bs-toggle="modal" data-bs-target="#modalNewsletter">
+                           <div class="input-group border-bottom border-light">
                               <input type="email" class="form-control rounded-0 px-0 border-0 bg-transparent text-reset" placeholder="Email">
                               <button class="btn text-reset p-0" type="submit">
                                  <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg>
@@ -206,7 +206,8 @@
                         <img src="images/landing-icon-email.png" alt="" aria-hidden="true" loading="lazy" style="aspect-ratio: 1/1; width: 30%; object-fit: contain;">
                         <h3 class="card-title fs-5 fw-bold text-capitalize my-3">email</h3>
                         <p class="card-text">
-                           <a href="mailto:info@indraco.com" target="_blank" class="text-reset text-decoration-none opacity-75-hover">info@indraco.com</a>
+                           <!-- <a href="mailto:info@indraco.com" target="_blank" class="text-reset text-decoration-none opacity-75-hover">info@indraco.com</a> -->
+                           <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover">info@indraco.com</a>
                         </p>
                      </div>
                   </article>
@@ -219,6 +220,22 @@
    </main>
    <script src="partials/page-footer.js"></script>
    <script src="partials/modal-search.js"></script>
+
+   <div id="modalNewsletter" class="modal fade">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-body p-4 p-lg-5">
+               <button class="btn-close rounded-0 shadow-none position-absolute top-0 end-0 m-2" data-bs-dismiss="modal"></button>
+               <p class="mb-0">
+                  <b class="fw-bold fs-5">Hore! Email kamu telah berhasil di daftarkan.</b>
+                  <br>
+                  Kamu akan menerima informasi terkini dan penawaran menarik dari kami. Jangan lupa cek email ya!
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <script src="js/jquery-3.7.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>

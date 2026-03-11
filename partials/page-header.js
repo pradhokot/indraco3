@@ -41,7 +41,7 @@ document.writeln(`
                   </button>
                </div>
                <ul class="list-unstyled mb-0 d-none d-lg-flex flex-wrap gap-3 ms-auto small">
-                  <li><a href="https://indracostore.com/" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
+                  <li><a href="https://indracostore.com/" target="_blank" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
                   <li class="vr"></li>
                   <li><a href="#" class="text-reset text-decoration-none">&#x1f1fa;&#x1f1f8; <span class="opacity-75-hover">English</span></a></li>
                   <li class="vr"></li>
@@ -821,7 +821,7 @@ document.writeln(`
                                  <div class="tab-pane fade show active" id="tab-pane-store-ecommerce" role="tabpanel" tabindex="0">
                                     <div class="d-flex column-gap-4">
                                        <div class="nav flex-column nav-pills" role="tablist">
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-ecommerce-supresso" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce-supresso" aria-selected="true">supresso</button>
+                                          <button type="button" onclick="https://supresso.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-ecommerce-supresso" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce-supresso" aria-selected="true">supresso</button>
                                           <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-ecommerce-indracostore" data-bs-toggle="pill" data-bs-target="#tab-pane-store-ecommerce-indracostore" aria-selected="false">indracostore</button>
                                        </div>
                                        <div class="vr"></div>
@@ -839,43 +839,33 @@ document.writeln(`
                                  <div class="tab-pane fade" id="tab-pane-store-marketplace" role="tabpanel" tabindex="0">
                                     <div class="d-flex column-gap-4">
                                        <div class="nav flex-column nav-pills" role="tablist">
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-marketplace-tokopedia" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tokopedia" aria-selected="true">tokopedia</button>
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-shopee" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-shopee" aria-selected="false">shopee</button>
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-lazada" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-lazada" aria-selected="false">lazada</button>
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-blibli" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-blibli" aria-selected="false">blibli</button>
-                                          <button type="button" onclick="https://indracostore.com/" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-tiktokshop" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tiktokshop" aria-selected="false">tiktok shop</button>
+                                          <button type="button" onclick="https://www.indraco.com/mplink/redirect.php?linkclick=tokopedia" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover active" id="tab-link-store-marketplace-tokopedia" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tokopedia" aria-selected="true">tokopedia</button>
+                                          <button type="button" onclick="https://www.indraco.com/mplink/redirect.php?linkclick=shopee" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-shopee" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-shopee" aria-selected="false">shopee</button>
+                                          <button type="button" onclick="https://www.indraco.com/mplink/redirect.php?linkclick=lazada" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-lazada" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-lazada" aria-selected="false">lazada</button>
+                                          <button type="button" onclick="https://www.indraco.com/mplink/redirect.php?linkclick=blibli" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover" id="tab-link-store-marketplace-blibli" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-blibli" aria-selected="false">blibli</button>
+                                          <button type="button" onclick="#" target="_blank" class="nav-link text-reset text-start px-0 text-capitalize bg-transparent rounded-0 opacity-75-hover disabled" id="tab-link-store-marketplace-tiktokshop" data-bs-toggle="pill" data-bs-target="#tab-pane-store-marketplace-tiktokshop" aria-selected="false">tiktok shop</button>
                                        </div>
                                        <div class="vr"></div>
                                        <div class="tab-content">
                                           <div class="tab-pane fade show active" id="tab-pane-store-marketplace-tokopedia" role="tabpanel" tabindex="0">
                                              <p class="small text-muted">INDRACO toko resmi :</p>
-                                             <a href="#" target="_blank" class="text-reset text-decoration-none">
-                                                <img src="images/logo-tokopedia-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 14rem;">
-                                             </a>
+                                             <img src="images/logo-tokopedia-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 14rem;">
                                           </div>
                                           <div class="tab-pane fade" id="tab-pane-store-marketplace-shopee" role="tabpanel" tabindex="0">
                                              <p class="small text-muted">INDRACO toko resmi :</p>
-                                             <a href="#" target="_blank" class="text-reset text-decoration-none">
-                                                <img src="images/logo-shopee-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 12rem;">
-                                             </a>
+                                             <img src="images/logo-shopee-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 12rem;">
                                           </div>
                                           <div class="tab-pane fade" id="tab-pane-store-marketplace-lazada" role="tabpanel" tabindex="0">
                                              <p class="small text-muted">INDRACO toko resmi :</p>
-                                             <a href="#" target="_blank" class="text-reset text-decoration-none">
-                                                <img src="images/logo-lazada-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 12rem;">
-                                             </a>
+                                             <img src="images/logo-lazada-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 12rem;">
                                           </div>
                                           <div class="tab-pane fade" id="tab-pane-store-marketplace-blibli" role="tabpanel" tabindex="0">
                                              <p class="small text-muted">INDRACO toko resmi :</p>
-                                             <a href="#" target="_blank" class="text-reset text-decoration-none">
-                                                <img src="images/logo-blibli-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
-                                             </a>
+                                             <img src="images/logo-blibli-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
                                           </div>
                                           <div class="tab-pane fade" id="tab-pane-store-marketplace-tiktokshop" role="tabpanel" tabindex="0">
                                              <p class="small text-muted">INDRACO toko resmi :</p>
-                                             <a href="#" target="_blank" class="text-reset text-decoration-none">
-                                                <img src="images/logo-tiktok-shop-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 14rem;">
-                                             </a>
+                                             <img src="images/logo-tiktok-shop-flat.png" alt="" loading="lazy" class="w-100 h-auto" style="max-width: 14rem;">
                                           </div>
                                        </div>
                                     </div>

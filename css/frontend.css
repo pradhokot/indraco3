@@ -98,6 +98,13 @@ body>footer {
    text-decoration: none;
 }
 
+.disabled,
+.opacity-75-hover.disabled,
+.hover-underline.opacity-75-hover.disabled {
+   opacity: .25 !important;
+   pointer-events: none !important;
+}
+
 .text-muted {
    --bs-text-opacity: .5;
    color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
