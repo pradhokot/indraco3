@@ -220,3 +220,35 @@ document.addEventListener('DOMContentLoaded', function() {
       updateKamusUI();
    }
 });
+
+
+// Fungsi untuk membagi teks satu paragraf menjadi dua paragraf
+document.addEventListener('DOMContentLoaded', function () {
+   // Mengambil semua elemen dengan class 'split-paragraph'
+   const splitElements = document.querySelectorAll(".split-paragraph");
+
+   splitElements.forEach(el => {
+      const text = el.innerText.trim();
+      if (!text) return;
+
+      // Mencoba membagi teks berdasarkan kalimat (diakhiri titik, tanda tanya, atau seru)
+      const sentences = text.match(/[^\.!\?]+[\.!\?]+/g);
+
+      if (sentences && sentences.length > 1) {
+         // Jika kalimat lebih dari 1, bagi jumlah kalimat jadi dua bagian
+         const middle = Math.ceil(sentences.length / 2);
+         const par1 = sentences.slice(0, middle).join(" ").trim();
+         const par2 = sentences.slice(middle).join(" ").trim();
+
+         el.innerHTML = `<p class="mb-3">${par1}</p><p class="mb-0">${par2}</p>`;
+      } else {
+         // Jika hanya ada 1 kalimat panjang, bagi teks berdasarkan jumlah kata rata tengah
+         const words = text.split(" ");
+         const middle = Math.ceil(words.length / 2);
+         const par1 = words.slice(0, middle).join(" ");
+         const par2 = words.slice(middle).join(" ");
+
+         el.innerHTML = `<p class="mb-3">${par1}</p><p class="mb-0">${par2}</p>`;
+      }
+   });
+});

@@ -29,7 +29,7 @@ document.writeln(`
                </nav>
             </div>
             <div class="col col-12 col-md-6 col-lg-auto order-lg-3">
-               <h5 class="fs-6 fw-bold text-uppercase mb-3">hubungi kami</h5>
+               <h5 class="fs-6 fw-bold text-uppercase mb-3" data-i18n="footbar_heading_address">hubungi kami</h5>
                <address aria-label="informasi alamat di kaki halaman" class="mb-0">
                   <a href="https://maps.app.goo.gl/QFxLopT45ZBAvngk6" target="_blank" class="text-reset hover-underline opacity-75-hover">Jl. Semeru No. 133-135 Bambe, Kec. Driyorejo. Gresik 61177 Jawa Timur - Indonesia</a>
                   <br><br>
@@ -41,7 +41,7 @@ document.writeln(`
                </address>
             </div>
             <div class="col col-12 col-md-6 col-lg-auto order-lg-2">
-               <h5 class="fs-6 fw-bold text-uppercase mb-3">laman produk</h5>
+               <h5 class="fs-6 fw-bold text-uppercase mb-3" data-i18n="footbar_heading_product">laman produk</h5>
                <ul aria-label="daftar merek" class="list-unstyled mb-0 d-flex flex-wrap row-gap-2 column-gap-3 text-capitalize d-lg-grid column-gap-lg-5" style="grid-template-columns: repeat(2, 1fr);">
                   <li>
                      <a href="brand.html" class="text-reset hover-underline opacity-75-hover">
@@ -110,15 +110,15 @@ document.writeln(`
       <hr>
       <div class="container small">
          <div class="d-flex flex-wrap column-gap-5 justify-content-between">
-            <p class="text-muted">Dikembangkan oleh WEBDEV &copy; <span id="copyright-year">2024</span> <b class="fw-bold">INDRACO</b>. Semua hak dilindungi undang-undang.</p>
+            <p class="text-muted"><span data-i18n="footbar_developed_by">Dikembangkan oleh</span> WEBDEV &copy; <span id="copyright-year">2024</span> <b class="fw-bold">INDRACO</b>. <span data-i18n="footbar_copyright">Semua hak dilindungi undang-undang.</></p>
             <ul class="list-unstyled d-flex flex-wrap gap-2 text-capitalize">
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover">kebijakan privasi</a></li>
+               <li><a href="#" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_policy"> </a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover">syarat & ketentuan berlaku</a></li>
+               <li><a href="#" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_terms">syarat & ketentuan berlaku</a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled">informasi keamanan data</a></li>
+               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_data">informasi keamanan data</a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled">bantuan</a></li>
+               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_help">bantuan</a></li>
             </ul>
          </div>
       </div>

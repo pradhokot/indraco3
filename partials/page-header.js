@@ -41,7 +41,7 @@ document.writeln(`
                   </button>
                </div>
                <ul class="list-unstyled mb-0 d-none d-lg-flex flex-wrap gap-3 ms-auto small">
-                  <li><a href="https://indracostore.com/" target="_blank" class="text-reset text-decoration-none opacity-75-hover">INDRACOSTORE</a></li>
+                  <li><a href="https://indracostore.com/" target="_blank" class="text-reset text-decoration-none opacity-75-hover text-capitalize">INDRACOSTORE</a></li>
                   <li class="vr"></li>
                   <!-- toggler bahasa inggris -->
                   <li><a href="#" class="text-reset text-decoration-none lang-toggler" data-lang="en">&#x1f1fa;&#x1f1f8; <span class="opacity-75-hover">English</span></a></li>
@@ -52,13 +52,13 @@ document.writeln(`
             </div>
             <div class="navbar-bawah w-100 d-none d-lg-flex align-items-lg-center column-gap-lg-5">
                <!-- navigasi desktop -->
-               <ul aria-label="navigasi desktop" class="list-unstyled mb-0 d-flex flex-wrap gap-3 text-capitalize flex-lg-grow-1">
+               <ul aria-label="navigasi desktop" class="list-unstyled mb-0 d-flex flex-wrap gap-3 flex-lg-grow-1">
                   <li>
-                     <a href="about.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_about">tentang kami</a>
+                     <a href="about.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_about">tentang kami</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="product.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link" data-i18n="nav_product">produk</a>
+                     <a href="product.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link text-capitalize" data-i18n="nav_product">produk</a>
                      <!-- submenu produk di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
@@ -91,8 +91,8 @@ document.writeln(`
                                        <div class="tab-content">
                                           <div class="tab-pane fade h-100 show active" id="tab-pane-product-consumer-supresso" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">supresso</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">Dengan biji-biji kopi yang berasal dari timur hingga barat Indonesia, koleksi kopi single-origin Supresso menghasilkan profil rasa yang premium, mewah sekaligus unik. Dengan sepenuh hati, kami fokus menyajikan kopi kualitas tinggi untuk penikmat kopi di seluruh dunia dalam bentuk biji, bubuk, drip, dan kapsul. Nikmati pengalaman kopi Indonesia dalam kualitas dan kemurniannya, bersama Supresso.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">supresso</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_supresso">Dengan biji-biji kopi yang berasal dari timur hingga barat Indonesia, koleksi kopi single-origin Supresso menghasilkan profil rasa yang premium, mewah sekaligus unik. Dengan sepenuh hati, kami fokus menyajikan kopi kualitas tinggi untuk penikmat kopi di seluruh dunia dalam bentuk biji, bubuk, drip, dan kapsul. Nikmati pengalaman kopi Indonesia dalam kualitas dan kemurniannya, bersama Supresso.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -114,8 +114,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-balicafe" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">BaliCafé</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">Diracik dari kopi Bali asli, nikmati hasil kreasi Balicafé kami, dan menyatulah dengan tradisi kopi pulau Bali yang magis.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">BaliCafé</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_balicafe">Diracik dari kopi Bali asli, nikmati hasil kreasi Balicafé kami, dan menyatulah dengan tradisi kopi pulau Bali yang magis.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -137,8 +137,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-ucafe" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">UCAFÉ</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">UCAFÉ for “U”. Dirancang untuk menyatukan dunia peminum kopi dari berbagai latar, dengan ragam rasa dan aromanya, UCAFÉ terdepan menemani dirimu yang sesungguhnya, menjaga cita-cita, impian, dan juga kesukaanmu.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">UCAFÉ</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_ucafe">UCAFÉ for “U”. Dirancang untuk menyatukan dunia peminum kopi dari berbagai latar, dengan ragam rasa dan aromanya, UCAFÉ terdepan menemani dirimu yang sesungguhnya, menjaga cita-cita, impian, dan juga kesukaanmu.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -160,8 +160,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-rasa-sayang" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">rasa sayang</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">Rasa sayang eh, Rasa sayang sayang eh ~ Diracik pada 1984 dengan rasa dan aroma nostalgia, Rasa sayang membawa penghormatan bagi kopi di masa lalu, sekaligus memupuk rasa nostalgia yang semakin hangat dengan teknik presisi yang lebih baru.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">rasa sayang</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_rasa_sayang">Rasa sayang eh, Rasa sayang sayang eh ~ Diracik pada 1984 dengan rasa dan aroma nostalgia, Rasa sayang membawa penghormatan bagi kopi di masa lalu, sekaligus memupuk rasa nostalgia yang semakin hangat dengan teknik presisi yang lebih baru.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -183,8 +183,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-tugu-buaya" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">tugu buaya</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">Bercita rasa kuat serta tekstur tegas. Dikembangkan sejak 1977, Tugu Buaya memiliki rasa yang unik dengan karakter kopi yang diterima semua orang.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">tugu buaya</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_tugu_buaya">Bercita rasa kuat serta tekstur tegas. Dikembangkan sejak 1977, Tugu Buaya memiliki rasa yang unik dengan karakter kopi yang diterima semua orang.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -206,8 +206,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-uang-emas" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">uang emas</span> | <span class="fw-thin">kopi</span></h3>
-                                                <p class="mb-4">Dibuat dari biji kopi pilihan, cobalah kopi asli dengan paduan metode pengolahan tradisional dan modern ini. Dari kreasi kopi hitam yang sesungguhnya, temukan nuansa kontemporer yang tiada duanya.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">uang emas</span> | <span class="fw-thin" data-i18n="coffee">kopi</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_uang_emas">Dibuat dari biji kopi pilihan, cobalah kopi asli dengan paduan metode pengolahan tradisional dan modern ini. Dari kreasi kopi hitam yang sesungguhnya, temukan nuansa kontemporer yang tiada duanya.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -229,8 +229,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-brochoco" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">BROCHOCO</span> | <span class="fw-thin">cokelat</span></h3>
-                                                <p class="mb-4">Mau minuman coklat dengan berbagai rasa pilihan? BROCHOCO jawabannya! Isi hari-harimu dengan BROCHOCO, dengan rasa Original juga Choco Banana. Nikmati beragam rasa manisnya coklat dan lembutnya krim, berpadu seimbang dalam cita rasa yang menggoda. Favorit semua kalangan dan selalu jadi pilihan, dengan berbagai kreasi penyajian yang lezat.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">BROCHOCO</span> | <span class="fw-thin" data-i18n="chocolate">cokelat</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_brochoco">Mau minuman coklat dengan berbagai rasa pilihan? BROCHOCO jawabannya! Isi hari-harimu dengan BROCHOCO, dengan rasa Original juga Choco Banana. Nikmati beragam rasa manisnya coklat dan lembutnya krim, berpadu seimbang dalam cita rasa yang menggoda. Favorit semua kalangan dan selalu jadi pilihan, dengan berbagai kreasi penyajian yang lezat.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -252,8 +252,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-jaheku" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">jaheku</span> | <span class="fw-thin">jahe</span></h3>
-                                                <p class="mb-4">Jaheku / definisi / “Jahe kesukaanku” dalam bahasa Indonesia. Merupakan bahan pangan yang familiar di banyak negara, Jaheku menyajikan segala manfaat dan kesegaran jahe kepada konsumen dalam bentuk minuman, dengan kombinasi rasa Jaheku Gula Aren, dan juga Jaheku Madu, memantapkan berbagai manfaat serta rasa unik jahe yang selalu disukai.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">jaheku</span> | <span class="fw-thin" data-i18n="ginger">jahe</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_jaheku">Jaheku / definisi / “Jahe kesukaanku” dalam bahasa Indonesia. Merupakan bahan pangan yang familiar di banyak negara, Jaheku menyajikan segala manfaat dan kesegaran jahe kepada konsumen dalam bentuk minuman, dengan kombinasi rasa Jaheku Gula Aren, dan juga Jaheku Madu, memantapkan berbagai manfaat serta rasa unik jahe yang selalu disukai.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -275,8 +275,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-intirasa" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">intiRasa</span> | <span class="fw-thin">santan</span></h3>
-                                                <p class="mb-4">Santan bubuk intiRasa merupakan versi praktis dari cita rasa gurih ala santan kelapa yang sesungguhnya, berkualitas dan disesuaikan dengan kebutuhan dapur anda yang serba cepat.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">intiRasa</span> | <span class="fw-thin" data-i18n="choconutmilk">santan</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_intirasa">Santan bubuk intiRasa merupakan versi praktis dari cita rasa gurih ala santan kelapa yang sesungguhnya, berkualitas dan disesuaikan dengan kebutuhan dapur anda yang serba cepat.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -298,8 +298,8 @@ document.writeln(`
                                           </div>
                                           <div class="tab-pane fade h-100" id="tab-pane-product-consumer-haocafe" role="tabpanel" tabindex="0">
                                              <div class="d-flex flex-column h-100">
-                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">hao cafe</span> | <span class="fw-thin">krimer & gula</span></h3>
-                                                <p class="mb-4">Kopi yang dibuat secara sempurna dengan tekstur kuat yang mengeluarkan aroma khas dan rasa yang mantap.</p>
+                                                <h3 class="text-capitalize mb-3"><span class="fw-bold">hao cafe</span> | <span class="fw-thin" data-i18n="creamer&sugar">krimer & gula</span></h3>
+                                                <p class="mb-4" data-i18n="navdesc_haocafe">Kopi yang dibuat secara sempurna dengan tekstur kuat yang mengeluarkan aroma khas dan rasa yang mantap.</p>
                                                 <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
@@ -802,11 +802,11 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="businesses.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_business">bisnis</a>
+                     <a href="businesses.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_business">bisnis</a>
                   </li>
                   <li class="vr"></li>
                   <li class="dropdown">
-                     <a href="stores.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link" data-i18n="nav_stores">toko resmi</a>
+                     <a href="stores.html" class="text-reset text-decoration-none opacity-75-hover dropdown-link text-capitalize" data-i18n="nav_stores">toko resmi</a>
                      <!-- submenu toko resmi di navigasi desktop -->
                      <div class="dropdown-menu rounded-0 border-0 bg-light-subtle position-fixed start-0 end-0 py-4">
                         <div class="container-lg pb-3">
@@ -880,19 +880,19 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_news">berita & acara</a>
+                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_news">berita & acara</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_download">unduhan</a>
+                     <a href="download.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_download">unduhan</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="career.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_career">karir</a>
+                     <a href="career.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_career">karir</a>
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover" data-i18n="nav_contact">kontak</a>
+                     <a href="contact.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_contact">kontak</a>
                   </li>
                </ul>
                <div class="d-flex column-gap-4">
