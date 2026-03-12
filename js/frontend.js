@@ -52,25 +52,19 @@ links.forEach(link => {
    const dataI18n = link.getAttribute("data-i18n");
    let isActive = false;
 
+   // 1. Exact match
    if (linkPage && linkPage !== "#" && !linkPage.startsWith("javascript:")) {
-      // 1. Exact match
       if (linkPage === currentPage || linkPage === activeLinkOverride) {
          isActive = true;
       } 
-      // 2. Subpages of News
-      else if (linkPage === "news.html" && currentPage.startsWith("news")) {
-         isActive = true;
-      } 
-      // 3. Subpages of Product
-      else if (linkPage === "product.html" && ["product.html", "brand.html", "foodservice.html", "equipment.html"].includes(currentPage)) {
-         isActive = true;
-      }
    }
 
-   // Fallback checking using data-i18n for mobile menu linking
+   // 2. Subpages of News (hanya untuk menu utama yang memiliki data-i18n)
    if (dataI18n === "nav_news" && currentPage.startsWith("news")) {
       isActive = true;
    }
+   
+   // 3. Subpages of Product (hanya untuk menu utama yang memiliki data-i18n)
    if (dataI18n === "nav_product" && ["product.html", "brand.html", "foodservice.html", "equipment.html"].includes(currentPage)) {
       isActive = true;
    }
