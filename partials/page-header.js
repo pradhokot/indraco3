@@ -339,7 +339,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="coffee">kopi</h3>
                                                 <p class="mb-4" data-i18n="navdesc_coffee">Dari Sumatra hingga Papua, seri kopi specialty Indonesia yang sudah terkenal ke mancanegara.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -362,7 +362,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="creamer">krimer</h3>
                                                 <p class="mb-4" data-i18n="navdesc_creamer">Krimer berkualitas dengan standar produksi dan penjaminan mutu yang tinggi, untuk skala konsumsi rumah ataupun industri.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -385,7 +385,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="tea">teh</h3>
                                                 <p class="mb-4" data-i18n="navdesc_tea">Teh autentik Indonesia dengan pengalaman tradisi ngeteh yang kaya. Rasa yang kuat dengan tekstur yang lembut.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -408,7 +408,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="gringer">jahe</h3>
                                                 <p class="mb-4" data-i18n="navdesc_gringer">Minuman jahe premium yang memberikan kehangatan seimbang, kini tersedia dalam berbagai varian.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -431,7 +431,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="chocolate">cokelat</h3>
                                                 <p class="mb-4" data-i18n="navdesc_chocolate">Dipetik dari kebun kakao asli Indonesia, lini produk coklat kami mengutamakan rasa yang asli dengan tekstur yang lembut, kaya dan mewah.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -454,7 +454,7 @@ document.writeln(`
                                              <div class="d-flex flex-column h-100">
                                                 <h3 class="text-capitalize mb-3 fw-bold" data-i18n="sugar">gula</h3>
                                                 <p class="mb-4" data-i18n="navdesc_sugar">Gula dan berbagai produk pemanis lainnya juga tersedia dalam berbagai tipe, ukuran dan skala produksi/bisnis.</p>
-                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                    <figure class="figure w-100 m-0">
                                                       <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                          <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -502,7 +502,7 @@ document.writeln(`
                                                    <div class="tab-pane fade show active" id="tab-pane-product-equipment-coffee-machine-full-auto" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_10">mesin kopi full otomatis</h3>
                                                       <p class="mb-4" data-i18n="naveq_11">Mesin kopi full-otomatis - Siapkan kopi dalam hitungan menit, dengan hanya tap pada mesin yang mudah penggunaannya. Bentuknya ergonomis dan bisa diandalkan setiap hari.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -523,7 +523,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-coffee-machine-semi-auto" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_12">mesin kopi semi otomatis</h3>
                                                       <p class="mb-4" data-i18n="naveq_13">Sajikan kopi dengan mudah, memanfaatkan mesin semi-otomatis yang terpercaya. Mudah digunakan, siap dalam hitungan menit.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -544,7 +544,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-coffee-machine-brew" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_14">sistem seduh kopi</h3>
                                                       <p class="mb-4" data-i18n="naveq_15">Dengan pengetahuan pakar kopi, kami mempersembahkan sistem penyeduhan kopi yang sesuai untuk berbagai keperluan dan metode penyajian. Semua demi kualitas dan rasa kopi terbaik.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -565,7 +565,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-coffee-machine-capsules" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_16">mesin kopi kapsul</h3>
                                                       <p class="mb-4" data-i18n="naveq_17">Menyajikan kopi dengan lebih mudah. Mesin kapsul kopi yang mudah digunakan, hemat energi demi pengalaman kopi terbaik.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -586,7 +586,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-coffee-machine-grinder" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_18">grinder</h3>
                                                       <p class="mb-4" data-i18n="naveq_19">Untuk penggunaan pribadi dan profesional, dapatkan manfaat terbaik dari mesin giling kopi kami, cara lebih baik dalam menyajikan aslinya rasa kopi.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -620,7 +620,7 @@ document.writeln(`
                                                    <div class="tab-pane fade show active" id="tab-pane-product-equipment-dispenser-instant" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_22">mesin minuman instan</h3>
                                                       <p class="mb-4" data-i18n="naveq_23">Jaga kualitas minuman tetap paling baik, dan sajikan lebih baik menggunakan mesin minuman instan kami.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -642,7 +642,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-dispenser-cold" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_24">mesin minuman dingin</h3>
                                                       <p class="mb-4" data-i18n="naveq_25">Untuk berbagai jenis minuman segar! Dispenser minuman dingin kami telah siap untuk berbagai kegunaan, semua untuk kelancaran aktivitas Anda.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -680,7 +680,7 @@ document.writeln(`
                                                    <div class="tab-pane fade show active" id="tab-pane-product-equipment-accessories-pengaduk-susu" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_31">mesin pengaduk susu</h3>
                                                       <p class="mb-4" data-i18n="naveq_32">Menjaga kualitas produk susu Anda pada tingkat kesegaran paling tinggi. Koleksi alat pengaduk susu kami memudahkan Anda menikmati susu segar setiap hari.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -702,7 +702,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-accessories-ketel" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_33">ketel elektrik</h3>
                                                       <p class="mb-4" data-i18n="naveq_34">Menjaga kopi dan teh pada suhu optimum memerlukan dedikasi khusus. Ketel elektrik membuat suhu terjaga dalam waktu yang lebih lama, memastikan hasil seduhan tetap prima.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -724,7 +724,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-accessories-french-press" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_35">french press</h3>
                                                       <p class="mb-4" data-i18n="naveq_36">Sentuhan artistik dari alat French Press kini lebih dekat dengan keseharian Anda.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -746,7 +746,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-accessories-moka-pot" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_37">moka pot</h3>
                                                       <p class="mb-4" data-i18n="naveq_38">Menggunakan sistem aliran moka pot yang legendaris, metode seduh favorit kami menghasilkan produk dan pengalaman kopi yang nyata.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">
@@ -768,7 +768,7 @@ document.writeln(`
                                                    <div class="tab-pane fade" id="tab-pane-product-equipment-accessories-glass" role="tabpanel" tabindex="0">
                                                       <h3 class="text-capitalize mb-3 fw-bold" data-i18n="naveq_39">gelas dua lapis</h3>
                                                       <p class="mb-4" data-i18n="naveq_40">Sentuhan artistik dalam penyajian kopi, semua dalam bentuk gelas unik ini.</p>
-                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end">
+                                                      <div class="d-flex gap-3 w-100 tab-figure-image flex-grow-1 align-items-end d-none">
                                                          <figure class="figure w-100 m-0">
                                                             <div class="figure-img ratio ratio-1x1 w-100 bg-secondary m-0">
                                                                <img src="" alt="" loading="lazy" class="object-fit-cover">

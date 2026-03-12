@@ -112,13 +112,13 @@ document.writeln(`
          <div class="d-flex flex-wrap column-gap-5 justify-content-between">
             <p class="text-muted"><span data-i18n="footbar_developed_by">Dikembangkan oleh</span> WEBDEV &copy; <span id="copyright-year">2024</span> <b class="fw-bold">INDRACO</b>. <span data-i18n="footbar_copyright">Semua hak dilindungi undang-undang.</></p>
             <ul class="list-unstyled d-flex flex-wrap gap-2 text-capitalize">
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_policy"> </a></li>
+               <li><a href="https://indraco.com/privacy?lang=id" target="_blank" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_policy"> </a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_terms">syarat & ketentuan berlaku</a></li>
+               <li><a href="https://indraco.com/terms?lang=id" target="_blank" class="text-reset hover-underline opacity-75-hover" data-i18n="footbar_terms">syarat & ketentuan berlaku</a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_data">informasi keamanan data</a></li>
+               <li><a href="#" target="_blank" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_data">informasi keamanan data</a></li>
                <li class="vr"></li>
-               <li><a href="#" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_help">bantuan</a></li>
+               <li><a href="#" target="_blank" class="text-reset hover-underline opacity-75-hover disabled" data-i18n="footbar_help">bantuan</a></li>
             </ul>
          </div>
       </div>

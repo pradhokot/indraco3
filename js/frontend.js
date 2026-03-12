@@ -43,15 +43,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Active page statis
-// Active page statis
-const links = document.querySelectorAll("ul a");
+const links = document.querySelectorAll("ul a, .navbar a, .nav-link, a[data-i18n]");
 const currentPage = window.location.pathname.split("/").pop();
 const activeLinkOverride = document.body.getAttribute("data-active-link");
 
 links.forEach(link => {
    const linkPage = link.getAttribute("href");
+   const dataI18n = link.getAttribute("data-i18n");
+   let isActive = false;
 
-   if (linkPage === currentPage || linkPage === activeLinkOverride) {
+   if (linkPage && linkPage !== "#" && !linkPage.startsWith("javascript:")) {
+      // 1. Exact match
+      if (linkPage === currentPage || linkPage === activeLinkOverride) {
+         isActive = true;
+      } 
+      // 2. Subpages of News
+      else if (linkPage === "news.html" && currentPage.startsWith("news")) {
+         isActive = true;
+      } 
+      // 3. Subpages of Product
+      else if (linkPage === "product.html" && ["product.html", "brand.html", "foodservice.html", "equipment.html"].includes(currentPage)) {
+         isActive = true;
+      }
+   }
+
+   // Fallback checking using data-i18n for mobile menu linking
+   if (dataI18n === "nav_news" && currentPage.startsWith("news")) {
+      isActive = true;
+   }
+   if (dataI18n === "nav_product" && ["product.html", "brand.html", "foodservice.html", "equipment.html"].includes(currentPage)) {
+      isActive = true;
+   }
+
+   if (isActive) {
       link.classList.add("active");
       link.setAttribute("aria-current", "page");
    }
@@ -76,20 +100,27 @@ document.addEventListener('DOMContentLoaded', updateCarouselControls);
 
 
 // 2 line text (Mengambil semua elemen dengan class 'text-line-2')
-const elements = document.querySelectorAll(".text-line-2");
+window.applyTextLine2 = function() {
+   const elements = document.querySelectorAll(".text-line-2");
 
-elements.forEach((el) => {
-   const words = el.innerText.trim().split(" ");
+   elements.forEach((el) => {
+      const text = el.textContent.trim();
+      if (!text) return;
 
-   // Menghitung titik tengah jumlah kata
-   const middle = Math.ceil(words.length / 2);
+      const words = text.split(/\s+/);
 
-   // Membagi kata menjadi dua bagian dan menggabungkannya kembali dengan <br>
-   const baris1 = words.slice(0, middle).join(" ");
-   const baris2 = words.slice(middle).join(" ");
+      // Menghitung titik tengah jumlah kata
+      const middle = Math.ceil(words.length / 2);
 
-   el.innerHTML = `${baris1}<br>${baris2}`;
-});
+      // Membagi kata menjadi dua bagian dan menggabungkannya kembali dengan <br>
+      const baris1 = words.slice(0, middle).join(" ");
+      const baris2 = words.slice(middle).join(" ");
+
+      el.innerHTML = `${baris1}<br>${baris2}`;
+   });
+};
+
+document.addEventListener('DOMContentLoaded', window.applyTextLine2);
 
 // Hover actions untuk submenu produk dan toko resmi di navigasi desktop
 document.querySelectorAll('.dropdown-menu .nav-pills .nav-link[data-bs-toggle="pill"]').forEach(function (pill) {
@@ -213,6 +244,10 @@ document.addEventListener('DOMContentLoaded', function() {
             element.textContent = translations[activeLang][key];
          }
       });
+
+      // Terapkan ulang efek teks setelah terjemahan diubah
+      if (typeof window.applyTextLine2 === 'function') window.applyTextLine2();
+      if (typeof window.applySplitParagraph === 'function') window.applySplitParagraph();
    }
 
    // Panggil satu kali saat Website pertamakali dibuka
@@ -223,12 +258,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Fungsi untuk membagi teks satu paragraf menjadi dua paragraf
-document.addEventListener('DOMContentLoaded', function () {
+window.applySplitParagraph = function() {
    // Mengambil semua elemen dengan class 'split-paragraph'
    const splitElements = document.querySelectorAll(".split-paragraph");
 
    splitElements.forEach(el => {
-      const text = el.innerText.trim();
+      const text = el.textContent.trim();
       if (!text) return;
 
       // Mencoba membagi teks berdasarkan kalimat (diakhiri titik, tanda tanya, atau seru)
@@ -243,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
          el.innerHTML = `<p class="mb-3">${par1}</p><p class="mb-0">${par2}</p>`;
       } else {
          // Jika hanya ada 1 kalimat panjang, bagi teks berdasarkan jumlah kata rata tengah
-         const words = text.split(" ");
+         const words = text.split(/\s+/);
          const middle = Math.ceil(words.length / 2);
          const par1 = words.slice(0, middle).join(" ");
          const par2 = words.slice(middle).join(" ");
@@ -251,4 +286,6 @@ document.addEventListener('DOMContentLoaded', function () {
          el.innerHTML = `<p class="mb-3">${par1}</p><p class="mb-0">${par2}</p>`;
       }
    });
-});
+};
+
+document.addEventListener('DOMContentLoaded', window.applySplitParagraph);
