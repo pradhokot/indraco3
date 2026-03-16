@@ -28,4 +28,10 @@
    body>main {
       z-index: 1 !important;
    }
+
+   
+}
+
+@media (min-width: 992px) {
+   #menu-news {max-width: 360px;}
 }

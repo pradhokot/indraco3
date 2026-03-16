@@ -152,7 +152,7 @@ const translations = {
       "nav_equipment": "mesin-mesin & peralatan khusus",
       "nav_business": "bisnis",
       "nav_stores": "toko resmi",
-      "nav_news": "berita & acara",
+      "nav_news": "berita",
       "nav_download": "unduhan",
       "nav_career": "karir",
       "nav_contact": "kontak"
@@ -326,7 +326,7 @@ const translations = {
       "nav_equipment": "machines & special equipment",
       "nav_business": "business",
       "nav_stores": "official stores",
-      "nav_news": "news & events",
+      "nav_news": "news",
       "nav_download": "downloads",
       "nav_career": "career",
       "nav_contact": "contact"
