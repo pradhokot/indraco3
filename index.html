@@ -44,6 +44,69 @@
             height: auto;
          }
       }
+
+      .category-header {
+         aspect-ratio: 16/9;
+         cursor: pointer;
+         position: relative;
+      }
+
+      .category-cover {
+         width: 100%;
+         height: 100%;
+         background-color: var(--bs-body-bg);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         transition: opacity .3s ease;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         opacity: 1;
+         visibility: visible;
+      }
+
+      .category-icon {
+         aspect-ratio: 1/1;
+         height: 75%;
+         width: auto;
+         position: relative;
+         background-color: var(--bs-primary);
+         border-radius: 50%;
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      @media (min-width: 992px) {
+         .category-header:hover .category-cover,
+         .category-header:focus .category-cover {
+            opacity: 0;
+            visibility: hidden;
+         }
+      }
+
+      .category-cover.hide-cover {
+         opacity: 0 !important;
+         visibility: hidden !important;
+      }
+
+      .category-inner {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         overflow: hidden;
+      }
+
+      .category-inner .carousel-item {
+         padding-left: 15%;
+         padding-right: 15%;
+      }
    </style>
 </head>
 <body>
@@ -102,6 +165,195 @@
             </div>
          </section>
    
+         <hr class="m-0">
+
+         <section class="py-5 text-center" aria-labelledby="brands">
+            <div class="py-lg-5">
+               <h2 id="brands" class="fs-3 fw-bold text-capitalize mb-5" data-i18n="home_product_heading">produk kami</h2>
+
+               <!-- daftar kategori produk -->
+               <div class="category-list row row-gap-5 row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-lg-4">
+
+                  <!-- kategori produk kopi -->
+                  <article class="col category-item">
+                     <div class="category-header">
+                        <div class="category-cover z-1">
+                           <div class="category-icon">
+                              <img src="images/coffee.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                           </div>
+                        </div>
+                        <div class="category-inner z-0">
+
+                           <div id="carouselCoffee" class="carousel slide h-100 carousel-invert">
+                              <div class="carousel-inner h-100">
+                                 <div class="carousel-item h-100 active">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-supresso.png" data-light="images/logo-supresso.png" data-dark="images/logo-supresso.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-balicafe.png" data-light="images/logo-balicafe.png" data-dark="images/logo-balicafe.png" class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-ucafe.png" data-light="images/logo-ucafe.png" data-dark="images/logo-ucafe-invert.png"class="theme-image w-75 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-rasa-sayang.png" data-light="images/logo-rasa-sayang.png" data-dark="images/logo-rasa-sayang.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-tugu-buaya.png" data-light="images/logo-tugu-buaya.png" data-dark="images/logo-tugu-buaya-invert.png"class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-uang-emas.png" data-light="images/logo-uang-emas.png" data-dark="images/logo-uang-emas-invert.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-haocafe.png" data-light="images/logo-haocafe.png" data-dark="images/logo-haocafe.png"class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoffee" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselCoffee" data-bs-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                              </button>
+                           </div>
+                           
+                        </div>
+                     </div>
+                     <div class="category-body">
+                        <h3 class="text-reset fw-bold text-capitalize" data-i18n="coffee">kopi</h3>
+                     </div>
+                  </article>
+
+                  <!-- kategori produk jahe -->
+                  <article class="col category-item">
+                     <div class="category-header">
+                        <div class="category-cover z-1">
+                           <div class="category-icon">
+                              <img src="images/ginger.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                           </div>
+                        </div>
+                        <div class="category-inner z-0">
+
+                           <div id="carouselGinger" class="carousel slide h-100 carousel-invert">
+                              <div class="carousel-inner h-100">
+                                 <div class="carousel-item h-100 active">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-jaheku.png" data-light="images/logo-jaheku.png" data-dark="images/logo-jaheku.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGinger" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselGinger" data-bs-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="category-body">
+                        <h3 class="text-reset fw-bold text-capitalize" data-i18n="ginger">jahe</h3>
+                     </div>
+                  </article>
+
+                  <!-- kategori produk bubuk kelapa -->
+                  <article class="col category-item">
+                     <div class="category-header">
+                        <div class="category-cover z-1">
+                           <div class="category-icon">
+                              <img src="images/coconut.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                           </div>
+                        </div>
+                        <div class="category-inner z-0">
+
+                           <div id="carouselCoconut" class="carousel slide h-100 carousel-invert">
+                              <div class="carousel-inner h-100">
+                                 <div class="carousel-item h-100 active">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-intirasa.png" data-light="images/logo-intirasa.png" data-dark="images/logo-intirasa.png" class="theme-image w-100 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoconut" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselCoconut" data-bs-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="category-body">
+                        <h3 class="text-reset fw-bold text-capitalize" data-i18n="home_coconut_powder">bubuk kelapa</h3>
+                     </div>
+                  </article>
+
+                  <!-- kategori produk cokalat -->
+                  <article class="col category-item">
+                     <div class="category-header">
+                        <div class="category-cover z-1">
+                           <div class="category-icon">
+                              <img src="images/cocoa.png" alt="" loading="lazy" aria-hidden="true" class="w-auto h-50">
+                           </div>
+                        </div>
+                        <div class="category-inner z-0">
+
+                           <div id="carouselCocoa" class="carousel slide h-100 carousel-invert">
+                              <div class="carousel-inner h-100">
+                                 <div class="carousel-item h-100 active">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-supresso-choco.png" data-light="images/logo-supresso-choco.png" data-dark="images/logo-supresso-choco.png" class="theme-image w-auto h-75" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                                 <div class="carousel-item h-100">
+                                    <a href="brand.html" class="text-reset text-decoration-none d-flex justify-content-center align-items-center h-100">
+                                       <img src="images/logo-brochoco.png" data-light="images/logo-brochoco.png" data-dark="images/logo-brochoco.png" class="theme-image w-75 h-auto" alt="" loading="lazy" aria-hidden="true">
+                                    </a>
+                                 </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCocoa" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselCocoa" data-bs-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="category-body">
+                        <h3 class="text-reset fw-bold text-capitalize" data-i18n="chocolate">cokelat</h3>
+                     </div>
+                  </article>
+
+               </div>
+
+            </div>
+         </section>
+
          <hr class="m-0">
    
          <section class="py-5">
@@ -250,5 +502,36 @@
    <script src="js/translations/shared.js"></script>
    <script src="js/translations/home.js"></script>
    <script src="js/frontend.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('.category-header').on('click', function(e) {
+            // Berlaku hanya untuk tampilan mobile (di bawah 992px)
+            if (window.innerWidth < 992) {
+               var $cover = $(this).find('.category-cover');
+               var isHidden = $cover.hasClass('hide-cover');
+               
+               // Jika cover sudah tersembunyi dan user klik link atau tombol carousel
+               if (isHidden && $(e.target).closest('a, button').length > 0) {
+                  return; // biarkan link dan tombol berfungsi
+               }
+               
+               // Reset semua cover untuk tampil kembali
+               $('.category-cover').removeClass('hide-cover');
+               
+               // Jika cover yang diklik belum disembunyikan, sembunyikan
+               if (!isHidden) {
+                  $cover.addClass('hide-cover');
+               }
+            }
+         });
+
+         // Hapus class saat ukuran layar membesar ke ukuran desktop
+         $(window).on('resize', function() {
+            if (window.innerWidth >= 992) {
+               $('.category-cover').removeClass('hide-cover');
+            }
+         });
+      });
+   </script>
 </body>
 </html>

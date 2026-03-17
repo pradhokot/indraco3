@@ -18,7 +18,9 @@ Object.assign(translations.id, {
    "home_12": "Kami terus mengembangkan relasi bisnis dan terbuka untuk hubungan potensial yang saling menguntungkan di dalam lingkup lokal maupun internasional. Jika Anda memiliki tujuan dan misi yang sama, silakan hubungi kami. Setiap ide dan masukan dalam pengembangan bisnis akan sangat bernilai, dan kami harap dapat bekerjasama dengan Anda segera.",
    "home_13": "INDRACO Store memberikan layanan yang memudahkan bagi para konsumen Indraco untuk mendapatkan berbagai produk mulai dari produk kopi, coklat, jahe dan semua yang diproduksi oleh Indraco. Semuanya bisa didapatkan hanya dengan beberapa langkah mudah dan sederhana, maka produk pesanan Anda akan kami kirimkan langsung ke rumah Anda.",
    "home_14": "kantor kami",
-   "home_15": "telepon"
+   "home_15": "telepon",
+   "home_product_heading": "produk kami",
+   "home_coconut_powder": "bubuk kelapa"
 });
 
 Object.assign(translations.en, {
@@ -39,5 +41,7 @@ Object.assign(translations.en, {
    "home_12": "We are continuously developing business relationships and are open to potential mutually beneficial partnerships, both locally and internationally. If you share our goals and mission, please contact us. Any ideas and input on business development will be greatly appreciated, and we look forward to working with you soon.",
    "home_13": "The INDRACO Store makes it easy for Indraco customers to purchase a variety of products, including coffee, chocolate, ginger, and everything else Indraco produces. Everything can be purchased with just a few easy steps, and we'll deliver your order directly to your doorstep.",
    "home_14": "our office",
-   "home_15": "phone"
+   "home_15": "phone",
+   "home_product_heading": "our products",
+   "home_coconut_powder": "coconut powder"
 });
