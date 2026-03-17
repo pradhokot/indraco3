@@ -21,7 +21,7 @@ document.writeln(`
                            <div class="collapse" id="collapse-produk-konsummen">
                               <ul class="nav d-block text-capitalize ps-4">
                                  <li class="nav-item">
-                                    <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">supresso</a>
+                                    <a href="brand-supresso.html" class="nav-link text-reset opacity-75-hover px-0">supresso</a>
                                  </li>
                                  <li class="nav-item">
                                     <a href="brand.html" class="nav-link text-reset opacity-75-hover px-0">BaliCafé</a>

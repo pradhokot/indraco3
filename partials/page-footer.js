@@ -46,7 +46,7 @@ document.writeln(`
                <h5 class="fs-6 fw-bold text-uppercase mb-3" data-i18n="footbar_heading_product">laman produk</h5>
                <ul aria-label="daftar merek" class="list-unstyled mb-0 d-flex flex-wrap row-gap-2 column-gap-3 text-capitalize d-lg-grid column-gap-lg-5" style="grid-template-columns: repeat(2, 1fr);">
                   <li>
-                     <a href="brand.html" class="text-reset hover-underline opacity-75-hover">
+                     <a href="brand-supresso.html" class="text-reset hover-underline opacity-75-hover">
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
                         Supresso
                      </a>
