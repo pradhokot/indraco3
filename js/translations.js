@@ -1,6 +1,32 @@
 // Kamus Terjemahan
 const translations = {
    id: {
+      // career page
+      "career_title_page": "Karir &ndash; INDRACO",
+      "career_title_header": "Karir &ndash; INDRACO",
+      "career_1": "Berkarir di INDRACO",
+      "career_2": "Ketahui alur proses rekruitmen di INDRACO mulai dari mengirimkan lamaran sampai tahap penerimaan karyawan. Ayo bergabung dan jadilah bagian dari kami!",
+      "career_3": "Kami mencari talenta-talenta untuk pekerjaan yang sesuai dalam berbagai tingkatan organisasi. Proses rekrutmen dilakukan secara selektif agar mendapat calon karyawan terbaik. Berikut alur proses rekrutmen di INDRACO GLOBAL INDONESIA mulai dari mengirimkan lamaran sampai ke tahap penerimaan karyawan.",
+      "career_4": "aplikasi masuk",
+      "career_5": "tes tulis & tes keahlian",
+      "career_6": "wawancara",
+      "career_7": "pemeriksaan kesehatan",
+      "career_8": "selamat bergabung",
+      "career_9": "Saat ini kami tidak membuka lowongan pekerjaan!",
+
+
+      // contact page
+      "contact_title_page": "Kontak &ndash; INDRACO",
+      "contact_title_header": "hubungi kami",
+      "contact_1": "Kami mudah dijangkau dan akan senang mendengar kabar atau informasi dari Anda.",
+      "contact_2": "Formulir Kontak",
+      "contact_3": "Nama Lengkap",
+      "contact_4": "Judul Pesan",
+      "contact_5": "Pesan",
+      "contact_6": "Kirim Pesan",
+      "contact_7": "Kontak Penjualan Domestik",
+      
+
       // about page
       "antar_saya_kesana": "antar saya kesana",
       "about_36": "Menyediakan produk-produk berkelas, berkualitas top dengan harga yang kompetitif, yang sesuai bahkan melebihi apa yang dibutuhkan konsumen.",
@@ -175,6 +201,32 @@ const translations = {
 
 
    en: {
+      // career page
+      "career_title_page": "Career &ndash; INDRACO",
+      "career_title_header": "career page",
+      "career_1": "Career at INDRACO",
+      "career_2": "Learn about INDRACO's recruitment process, from submitting an application to being hired. Come join us and be a part of us!",
+      "career_3": "We seek talented candidates for suitable positions at various levels of our organization. Our recruitment process is selective to ensure we find the best candidates. Below is the recruitment process at INDRACO GLOBAL INDONESIA, from submitting an application to hiring.",
+      "career_4": "login application",
+      "career_5": "written test & skills test",
+      "career_6": "interview",
+      "career_7": "medical checkup",
+      "career_8": "Welcome to the club",
+      "career_9": "We currently have no job openings!",
+
+
+      // contact page
+      "contact_title_page": "Contact &ndash; INDRACO",
+      "contact_title_header": "contact us",
+      "contact_1": "We are easy to reach and would love to hear from you or have any questions.",
+      "contact_2": "Contact Form",
+      "contact_3": "Full Name",
+      "contact_4": "Message Title",
+      "contact_5": "Message",
+      "contact_6": "Send Message",
+      "contact_7": "Domestic Sales Contact",
+
+
       // about page
       "antar_saya_kesana": "take me there",
       "about_36": "Providing classy, ​​top quality products at competitive prices, which meet or even exceed consumer needs.",
