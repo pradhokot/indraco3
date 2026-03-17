@@ -20,23 +20,23 @@
    <link rel="stylesheet" href="css/theme.css">
    <link rel="stylesheet" href="css/frontend.css">
    <link rel="stylesheet" href="css/news.css">
-   <title>Gulfood Dubai 2026 &ndash; INDRACO</title>
+   <title data-i18n-title="news3_title_page">Gulfood Dubai 2026 &ndash; INDRACO</title>
    <style>
       /* * {outline: solid 1px green;} */
    </style>
 </head>
 <body>
-   <a href="#konten" class="visually-hidden-focusable">lewati ke konten utama</a>
+   <a href="#konten" class="visually-hidden-focusable" data-i18n="skip_to_content">lewati ke konten utama</a>
    <script src="partials/page-header.js"></script>
    <script src="partials/menu.js"></script>
    <main id="konten">
 
-      <h1 class="visually-hidden">halaman berita & acara</h1>
+      <h1 class="visually-hidden" data-i18n="news_h1">halaman berita & acara</h1>
       <div class="pb-5">
          <div class="container py-lg-5">
             <div class="sticky-top bg-body py-3 d-lg-none">
                <button class="btn btn-lg btn-invert text-uppercase w-100 d-flex align-items-center justify-content-center gap-3" data-bs-toggle="offcanvas" data-bs-target="#menu-news">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-day-fill" viewBox="0 0 16 16"><path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16zm-4.785-6.145a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43c0 .238.192.425.43.425m.336.563h-.672v4.105h.672zm-6.867 4.105v-2.3h2.261v-.61H4.684V7.801h2.464v-.61H4v5.332zm3.296 0h.676V9.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98z"/></svg> kalender acara
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-day-fill" viewBox="0 0 16 16"><path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16zm-4.785-6.145a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43c0 .238.192.425.43.425m.336.563h-.672v4.105h.672zm-6.867 4.105v-2.3h2.261v-.61H4.684V7.801h2.464v-.61H4v5.332zm3.296 0h.676V9.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98z"/></svg> <span data-i18n="news_btn_calendar">kalender acara</span>
                </button>
             </div>
             <div class="d-lg-grid" style="grid-template-columns: 1fr auto; gap: 5rem;">
@@ -44,9 +44,9 @@
                <script src="partials/menu-news.js"></script>
    
                <div id="news-content" class="order-lg-1">
-                  <h2 class="fs-1 fw-bold text-capitalize mb-0">Gulfood Dubai 2026</h2>
-                  <p class="small mb-4">26 &dash; 30 Januari 2026</p>
-                  <p>
+                  <h2 class="fs-1 fw-bold text-capitalize mb-0" data-i18n="news3_heading">Gulfood Dubai 2026</h2>
+                  <p class="small mb-4" data-i18n="news3_date">26 &dash; 30 Januari 2026</p>
+                  <p data-i18n-html="news3_body">
                      Datang dan sapa kami di Gulfood Dubai, 2026.
                      <br>
                      No. Booth: Z5-B21 (Indonesia Pavilion).
@@ -74,6 +74,7 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/translations/shared.js"></script>
+   <script src="js/translations/news.js"></script>
    <script src="js/frontend.js"></script>
    <script src="js/news.js"></script>
 </body>

@@ -157,7 +157,19 @@ document.addEventListener('DOMContentLoaded', function () {
                element.innerHTML = translations[activeLang][key];
             }
          });
-         
+         document.querySelectorAll('[data-i18n-html]').forEach(element => {
+            const key = element.getAttribute('data-i18n-html');
+            if (translations[activeLang] && translations[activeLang][key]) {
+               element.innerHTML = translations[activeLang][key];
+            }
+         });
+         const titleEl = document.querySelector('title[data-i18n-title]');
+         if (titleEl) {
+            const key = titleEl.getAttribute('data-i18n-title');
+            if (translations[activeLang] && translations[activeLang][key]) {
+               document.title = translations[activeLang][key].replace(/&ndash;/g, '–').replace(/&amp;/g, '&');
+            }
+         }
          if (typeof window.applyTextLine2 === 'function') window.applyTextLine2();
          if (typeof window.applySplitParagraph === 'function') window.applySplitParagraph();
       };
