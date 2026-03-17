@@ -69,7 +69,7 @@ document.writeln(`
                   <a href="stores.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_stores">toko resmi</a>
                </li>
                <li class="nav-item">
-                  <a href="news.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_news">berita & acara</a>
+                  <a href="news-13.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_news">berita & acara</a>
                </li>
                <li class="nav-item">
                   <a href="download.html" class="nav-link text-reset opacity-75-hover px-0" data-i18n="nav_download">unduhan</a>

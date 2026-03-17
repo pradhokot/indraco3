@@ -880,7 +880,7 @@ document.writeln(`
                   </li>
                   <li class="vr"></li>
                   <li>
-                     <a href="news.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_news">berita</a>
+                     <a href="news-13.html" class="text-reset text-decoration-none opacity-75-hover text-capitalize" data-i18n="nav_news">berita</a>
                   </li>
                   <li class="vr"></li>
                   <li>
