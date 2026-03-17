@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[activeLang] && translations[activeLang][key]) {
-               element.textContent = translations[activeLang][key];
+               element.innerHTML = translations[activeLang][key];
             }
          });
          

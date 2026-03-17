@@ -8,6 +8,7 @@ const translations = {
       "buy_now": "beli sekarang",
       "contact_us": "hubungi kami",
       "antar_saya_kesana": "antar saya kesana",
+      "skip_to_content": "lewati ke konten utama",
 
       // footer
       "footbar_help": "bantuan",
@@ -85,7 +86,7 @@ const translations = {
       "navdesc_uang_emas": "Dibuat dari biji kopi pilihan, cobalah kopi asli dengan paduan metode pengolahan tradisional dan modern ini. Dari kreasi kopi hitam yang sesungguhnya, temukan nuansa kontemporer yang tiada duanya.",
       "navdesc_tugu_buaya": "Bercita rasa kuat serta tekstur tegas. Dikembangkan sejak 1977, Tugu Buaya memiliki rasa yang unik dengan karakter kopi yang diterima semua orang.",
       "navdesc_rasa_sayang": "Rasa sayang eh, Rasa sayang sayang eh ~ Diracik pada 1984 dengan rasa dan aroma nostalgia, Rasa sayang membawa penghormatan bagi kopi di masa lalu, sekaligus memupuk rasa nostalgia yang semakin hangat dengan teknik presisi yang lebih baru.",
-      "navdesc_ucafe": "UCAFÉ for "U". Dirancang untuk menyatukan dunia peminum kopi dari berbagai latar, dengan ragam rasa dan aromanya, UCAFÉ terdepan menemani dirimu yang sesungguhnya, menjaga cita-cita, impian, dan juga kesukaanmu.",
+      "navdesc_ucafe": "UCAFÉ for \"U\". Dirancang untuk menyatukan dunia peminum kopi dari berbagai latar, dengan ragam rasa dan aromanya, UCAFÉ terdepan menemani dirimu yang sesungguhnya, menjaga cita-cita, impian, dan juga kesukaanmu.",
       "navdesc_balicafe": "Diracik dari kopi Bali asli, nikmati hasil kreasi Balicafé kami, dan menyatulah dengan tradisi kopi pulau Bali yang magis.",
       "navdesc_supresso": "Dengan biji-biji kopi yang berasal dari timur hingga barat Indonesia, koleksi kopi single-origin Supresso menghasilkan profil rasa yang premium, mewah sekaligus unik. Dengan sepenuh hati, kami fokus menyajikan kopi kualitas tinggi untuk penikmat kopi di seluruh dunia dalam bentuk biji, bubuk, drip, dan kapsul. Nikmati pengalaman kopi Indonesia dalam kualitas dan kemurniannya, bersama Supresso.",
 
@@ -110,6 +111,7 @@ const translations = {
       "buy_now": "buy now",
       "contact_us": "contact us",
       "antar_saya_kesana": "take me there",
+      "skip_to_content": "skip to main content",
 
       // footer
       "footbar_help": "help",
@@ -187,7 +189,7 @@ const translations = {
       "navdesc_uang_emas": "Made from carefully selected coffee beans, experience this authentic coffee blend of traditional and modern processing methods. Discover a truly black coffee experience like no other.",
       "navdesc_tugu_buaya": "With a strong flavor and a firm texture, Tugu Buaya has been developed since 1977 and boasts a unique taste and coffee character that is universally accepted.",
       "navdesc_rasa_sayang": "Rasa Sayang eh, Rasa Sayang eh ~ Formulated in 1984 with a nostalgic taste and aroma, Rasa Sayang brings homage to the coffee of the past, while cultivating a feeling of nostalgia that becomes warmer with newer precision techniques.",
-      "navdesc_ucafe": "UCAFÉ for "U". Designed to unite a world of coffee drinkers from all walks of life, with its diverse flavors and aromas, UCAFÉ is the leading companion to your true self, safeguarding your ideals, dreams, and passions.",
+      "navdesc_ucafe": "UCAFÉ for \"U\". Designed to unite a world of coffee drinkers from all walks of life, with its diverse flavors and aromas, UCAFÉ is the leading companion to your true self, safeguarding your ideals, dreams, and passions.",
       "navdesc_balicafe": "Crafted from authentic Balinese coffee, enjoy our Balicafé creations and immerse yourself in the magical coffee traditions of the island of Bali.",
       "navdesc_supresso": "With coffee beans sourced from east to west Indonesia, Supresso's single-origin coffee collection delivers premium, luxurious, and unique flavor profiles. We wholeheartedly focus on serving high-quality coffee to coffee lovers worldwide in bean, ground, drip, and capsule forms. Experience Indonesian coffee in its purest form with Supresso.",
 
